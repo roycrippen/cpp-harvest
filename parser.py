@@ -261,8 +261,6 @@ class Tree:
             for d in ds:
                 lss, obj = self.__separate(d)
                 obj.indent = indent
-                if hasattr(obj, 'private'):
-                    pass
                 xs.append(obj)
                 for ls in lss:
                     go(xs, indent + '  ', ls)
