@@ -1,0 +1,37 @@
+# configuration file for cpp-harvest application
+# maps directly to Config, Generator and App classes
+# changes to yaml keys should also be made to the python class in config.py
+
+!!python/object:config.Config
+
+# pygccxml.parser.config options
+# https://pygccxml.readthedocs.io/en/develop/apidocs/pygccxml.parser.config.html
+generator: !!python/object:config.Generator
+  compiler: clang++
+  cflags: ""
+  flags: null
+  working_directory: ./examples/foo
+
+# runtime application parameters
+app: !!python/object:config.App
+  # reduce the result set by excluding system and/or other file sets
+  exclude_files_start_with:
+    - /usr
+    - <builtin>
+
+   # reduce the result set by excluding specific namespaces
+  exclude_namespaces:
+    - ::std
+    - ::__gnu_cxx
+    - ::__gnu_debug
+    - ::__cxxabiv1
+
+  # c++ files to harvest
+  # "#include" files will be included automatically
+  files:
+    - main.cpp
+
+  result_yaml: foo_results.yaml
+  print_result: true
+  test_walk: true
+
