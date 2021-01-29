@@ -1,6 +1,3 @@
-from typing import Callable
-
-
 class Config:
     def __init__(self):
         self.generator: Generator = Generator()
@@ -25,7 +22,7 @@ class App:
 
 class Report:
     def __init__(self):
-        self.func = staticmethod(print)
+        self.func = None
         self.run = False
         self.show_screen = True
         self.output_yaml = None

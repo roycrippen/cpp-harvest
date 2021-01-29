@@ -1,6 +1,6 @@
-from pygccxml import utils
 from pygccxml import declarations
 from pygccxml import parser
+from pygccxml import utils
 
 if __name__ == '__main__':
     import os
@@ -11,10 +11,6 @@ if __name__ == '__main__':
         os.path.dirname(sys.modules[__name__].__file__))
     # Add pygccxml package to Python path
     sys.path.append(os.path.join(this_module_dir_path, '..', '..'))
-
-    from pygccxml import parser  # nopep8
-    from pygccxml import declarations  # nopep8
-    from pygccxml import utils  # nopep8
 
     # Find out the xml generator (gccxml or castxml)
     generator_path, generator_name = utils.find_xml_generator()

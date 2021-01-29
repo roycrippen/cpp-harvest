@@ -1,8 +1,8 @@
 import pprint
 
-from pygccxml import utils
 from pygccxml import declarations
 from pygccxml import parser
+from pygccxml import utils
 
 if __name__ == '__main__':
     # Find out the c++ parser
@@ -27,5 +27,3 @@ if __name__ == '__main__':
     ns = {'namespace': 'ns', 'variables': variables}
     pp = pprint.PrettyPrinter(indent=4, width=120)
     pp.pprint(ns)
-
-

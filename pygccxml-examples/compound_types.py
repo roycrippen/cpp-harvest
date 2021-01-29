@@ -1,6 +1,6 @@
-from pygccxml import utils
 from pygccxml import declarations
 from pygccxml import parser
+from pygccxml import utils
 
 if __name__ == '__main__':
     # Find out the c++ parser
