@@ -18,18 +18,22 @@ app: !!python/object:config.App
   # reduce the result set by excluding system and/or other file sets
   exclude_files_start_with: []
 
-   # reduce the result set by excluding specific namespaces
+  # reduce the result set by excluding specific namespaces
   exclude_namespaces: []
 
   # c++ files to harvest
   # "#include" files will be included automatically
   files: [tiny.hpp]
 
-  result_yaml: tiny_results.yaml
-  print_result: true
-
   reports:
+    - result_report: !!python/object:config.Report
+        func: run_result_report
+        run: true
+        show_screen: true
+        output_yaml: tiny_results.yaml
+
     - test_walk: !!python/object:config.Report
+        func: run_test_walk
         run: true
         show_screen: true
         output_yaml: null

@@ -4,7 +4,7 @@ requires
 - [pygccxml](https://github.com/CastXML/pygccxml)  
 - [g++](https://gcc.gnu.org/) or [clang++](https://clang.llvm.org/cxx_status.html) <br><br>
 
-pygccxml can be installed with ```sudo apt install pygccxml``` on Ubuntu
+pygccxml can be installed with `sudo apt install pygccxml` on Ubuntu
 
 ## quick start
 ```
@@ -15,36 +15,15 @@ or
 $ python main.py examples/foo/foo_config.yaml
 ```
 
-## config file example
-```yaml
-# configuration file for cpp-harvest application
-# maps directly to Config, Generator and App classes
-# changes to yaml keys should also be made to the python class in config.py
+## config file examples
+[foo_config.yaml](./examples/foo/foo_config.yaml) <br>
+[tiny_config.yaml](./examples/tiny/tiny_config.yaml) <br>
 
-!!python/object:config.Config
-
-# pygccxml.parser.config options
-# https://pygccxml.readthedocs.io/en/develop/apidocs/pygccxml.parser.config.html
-generator: !!python/object:config.Generator
-  # compiler: clang++
-  compiler: g++
-  cflags: ""
-  flags: null
-  working_directory: ./examples/tiny
-
-# runtime application parameters
-app: !!python/object:config.App
-  # reduce the result set by excluding system and/or other file sets
-  exclude_files_start_with: []
-
-   # reduce the result set by excluding specific namespaces
-  exclude_namespaces: []
-
-  # c++ files to harvest
-  # "#include" files will be included automatically
-  files: [tiny.hpp]
-
-  result_yaml: tiny_results.yaml
-  print_result: true
-  test_walk: true
+## run pygccxml examples
+The pygccxml folder contains the pygccxml tutorial examples. <br>
+Each <some example>.py file  has a <some example>.hpp data file that is compiled and parsed. <br>
+For example to run the `declaration.py` example:
+```bash
+$ cd pygccxml-examples
+$ python3 declaration.py 
 ```
