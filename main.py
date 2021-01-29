@@ -5,6 +5,7 @@ import yaml
 
 from config import Config
 from parser import parse, Tree
+from reports import Reports
 
 
 def main(argv):
@@ -23,30 +24,9 @@ def main(argv):
     tree: Tree = parse(config)
     result_yaml = yaml.dump(tree, default_flow_style=False, width=240)
 
-    # print results?
-    if config.app.print_result:
-        print('\nprinting YAML result...')
-        print(result_yaml)
-
-    # write results to YAML file
-    result_file = os.path.join(config.generator.working_directory, config.app.result_yaml)
-    with open(result_file, 'w') as f:
-        f.write(result_yaml)
-
-    # test YAML file
-    _yaml = read_yaml(result_file)
-    assert _yaml is not None
-
-    # test walk?
-    if config.app.test_walk:
-        print('\ntesting tree.walk()...')
-        objs = tree.walk()
-        for obj in objs:
-            if hasattr(obj, 'display'):
-                print(f'{obj.indent}{obj.display}')
-            else:
-                print(f'type = {type(obj).__name__}')
-    pass
+    # run reports
+    reports = Reports(tree, config)
+    reports.run()
 
 
 def read_yaml(f_name: str):

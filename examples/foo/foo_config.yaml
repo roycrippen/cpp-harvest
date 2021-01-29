@@ -31,7 +31,17 @@ app: !!python/object:config.App
   files:
     - main.cpp
 
-  result_yaml: foo_results.yaml
-  print_result: true
-  test_walk: true
+  reports:
+    - result_report: !!python/object:config.Report
+        func: run_result_report
+        run: true
+        show_screen: false
+        output_yaml: foo_results.yaml
+
+    - test_walk: !!python/object:config.Report
+        func: run_test_walk
+        run: true
+        show_screen: true
+        output_yaml: null
+
 
