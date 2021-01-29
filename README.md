@@ -21,7 +21,7 @@ $ python main.py examples/foo/foo_config.yaml
 
 ## run pygccxml examples
 The pygccxml folder contains the pygccxml tutorial examples. <br>
-Each <some example>.py file  has a <some example>.hpp data file that is compiled and parsed. <br>
+Each `some_example.py` file  has a `some_example.hpp` data file that is compiled and parsed. <br>
 For example to run the `declaration.py` example:
 ```bash
 $ cd pygccxml-examples
