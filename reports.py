@@ -32,7 +32,7 @@ class Reports:
         if report.show_screen:
             print('\ntesting tree.walk()...')
             for obj in objs:
-                if hasattr(obj, 'display'):
+                if hasattr(obj, 'display') and hasattr(obj, 'indent'):
                     print(f'{obj.indent}{obj.display}')
                 else:
                     print(f'type = {type(obj).__name__}')
