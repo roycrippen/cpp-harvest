@@ -21,7 +21,6 @@ def main(argv):
 
     # build the tree
     tree: Tree = parse(config)
-    result_yaml = yaml.dump(tree, default_flow_style=False, width=240)
 
     # run reports
     reports = Reports(tree, config)
