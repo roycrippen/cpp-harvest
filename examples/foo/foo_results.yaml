@@ -1,82 +1,439 @@
 !!python/object:parser.Tree
 classes:
-  ::some_name_space::Foo: &id012 !!python/object:parser.Klass
-    display: '[struct] ::some_name_space::Foo'
-    key: ::some_name_space::Foo
-    name: Foo
-    private: !!python/object:parser.Private
-      display: Private
-      variables:
-      - &id019 !!python/object:parser.Variable
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 1
-          decl_string: char
-          display: char
-          loc_file_name: null
-          loc_line: null
-        display: '[variable] ::some_name_space::Foo::c, type: char'
-        key: ::some_name_space::Foo::c
-        loc_file_name: examples/foo/foo.hpp
-        loc_line: 28
-        name: c
-    protected: !!python/object:parser.Protected
-      display: Protected
-      variables:
-      - &id020 !!python/object:parser.Variable
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 4
-          decl_string: float
-          display: float
-          loc_file_name: null
-          loc_line: null
-        display: '[variable] ::some_name_space::Foo::d, type: float'
-        key: ::some_name_space::Foo::d
-        loc_file_name: examples/foo/foo.hpp
-        loc_line: 30
-        name: d
-    public: !!python/object:parser.Public
-      constructors:
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::some_name_space::Foo::* )(  )'
-        key: ' ( ::some_name_space::Foo::* )(  )'
+    ::some_name_space::Foo: !!python/object:parser.Klass
+        display: '[struct] ::some_name_space::Foo'
+        key: ::some_name_space::Foo
         name: Foo
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
-        key: ' ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
-        name: Foo
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
-        key: ' ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
-        name: Foo
-      destructors:
-      - !!python/object:parser.Destructor
-        display: '[destructor]  ( ::some_name_space::Foo::* )(  )'
-        key: ' ( ::some_name_space::Foo::* )(  )'
-        name: ~Foo
-      display: Public
-      member_functions:
-      - &id001 !!python/object:parser.MemberFunction
-        arguments:
-        - !!python/object:parser.Argument
-          decl_string: int v
-          decl_type: !!python/object:parser.DeclaredType
+        private: !!python/object:parser.Private
+            display: Private
+            variables:
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 1
+                    decl_string: char
+                    display: char
+                    loc_file_name: null
+                    loc_line: null
+                display: '[variable] ::some_name_space::Foo::c, type: char'
+                key: ::some_name_space::Foo::c
+                loc_file_name: examples/foo/foo.hpp
+                loc_line: 28
+                name: c
+        protected: !!python/object:parser.Protected
+            display: Protected
+            variables:
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: float
+                    display: float
+                    loc_file_name: null
+                    loc_line: null
+                display: '[variable] ::some_name_space::Foo::d, type: float'
+                key: ::some_name_space::Foo::d
+                loc_file_name: examples/foo/foo.hpp
+                loc_line: 30
+                name: d
+        public: !!python/object:parser.Public
+            constructors:
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::some_name_space::Foo::* )(  )'
+                key: ' ( ::some_name_space::Foo::* )(  )'
+                name: Foo
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
+                key: ' ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
+                name: Foo
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
+                key: ' ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
+                name: Foo
+            destructors:
+            - !!python/object:parser.Destructor
+                display: '[destructor]  ( ::some_name_space::Foo::* )(  )'
+                key: ' ( ::some_name_space::Foo::* )(  )'
+                name: ~Foo
+            display: Public
+            member_functions:
+            - !!python/object:parser.MemberFunction
+                arguments:
+                - !!python/object:parser.Argument
+                    decl_string: int v
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 4
+                        decl_string: int
+                        display: int
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[argument] v, type: int'
+                    name: v
+                - !!python/object:parser.Argument
+                    decl_string: std::string const & x1
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::std::string const &
+                        display: ::std::string const &
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[argument] x1, type: ::std::string const &'
+                    name: x1
+                declaration: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
+                display: '[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)'
+                does_throw: true
+                has_static: true
+                key: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
+                name: my_function
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 0
+                    decl_string: ::std::string
+                    display: ::std::string
+                    loc_file_name: /usr/include/c++/9/bits/stringfwd.h
+                    loc_line: 79
+                virtuality: not virtual
+            member_operator:
+            - !!python/object:parser.MemberOperator
+                decl_string: ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )
+                display: '[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ='
+                name: operator=
+                symbol: '='
+            variables:
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 8
+                    decl_string: ::uintmax_t
+                    display: ::uintmax_t
+                    loc_file_name: /usr/include/stdint.h
+                    loc_line: 102
+                display: '[variable] ::some_name_space::Foo::a, type: ::uintmax_t'
+                key: ::some_name_space::Foo::a
+                loc_file_name: examples/foo/foo.hpp
+                loc_line: 19
+                name: a
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 8
+                    decl_string: ::uintmax_t
+                    display: ::uintmax_t
+                    loc_file_name: /usr/include/stdint.h
+                    loc_line: 102
+                display: '[variable] ::some_name_space::Foo::b, type: ::uintmax_t'
+                key: ::some_name_space::Foo::b
+                loc_file_name: examples/foo/foo.hpp
+                loc_line: 19
+                name: b
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 32
+                    decl_string: ::unittests::test_suite
+                    display: ::unittests::test_suite
+                    loc_file_name: examples/foo/unittests.hpp
+                    loc_line: 30
+                display: '[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite'
+                key: ::some_name_space::Foo::tests
+                loc_file_name: examples/foo/foo.hpp
+                loc_line: 21
+                name: tests
+    ::unittests::test_case: !!python/object:parser.Klass
+        display: '[struct] ::unittests::test_case'
+        key: ::unittests::test_case
+        name: test_case
+        private: !!python/object:parser.Private
+            display: Private
+            variables:
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 8
+                    decl_string: char const *
+                    display: char const *
+                    loc_file_name: null
+                    loc_line: null
+                display: '[variable] ::unittests::test_case::m_name, type: char const *'
+                key: ::unittests::test_case::m_name
+                loc_file_name: examples/foo/unittests.hpp
+                loc_line: 25
+                name: m_name
+        protected: !!python/object:parser.Protected
+            display: Protected
+        public: !!python/object:parser.Public
+            constructors:
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::unittests::test_case::* )( char const * )'
+                key: ' ( ::unittests::test_case::* )( char const * )'
+                name: test_case
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )'
+                key: ' ( ::unittests::test_case::* )( ::unittests::test_case const & )'
+                name: test_case
+            destructors:
+            - !!python/object:parser.Destructor
+                display: '[destructor]  ( ::unittests::test_case::* )(  )'
+                key: ' ( ::unittests::test_case::* )(  )'
+                name: ~test_case
+            display: Public
+            member_functions:
+            - !!python/object:parser.MemberFunction
+                declaration: void unittests::test_case::set_up()
+                display: '[member function] void unittests::test_case::set_up()'
+                does_throw: true
+                has_static: false
+                key: void unittests::test_case::set_up()
+                name: set_up
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 0
+                    decl_string: void
+                    display: void
+                    loc_file_name: null
+                    loc_line: null
+                virtuality: virtual
+            - !!python/object:parser.MemberFunction
+                declaration: void unittests::test_case::tear_down()
+                display: '[member function] void unittests::test_case::tear_down()'
+                does_throw: true
+                has_static: false
+                key: void unittests::test_case::tear_down()
+                name: tear_down
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 0
+                    decl_string: void
+                    display: void
+                    loc_file_name: null
+                    loc_line: null
+                virtuality: virtual
+            - !!python/object:parser.MemberFunction
+                declaration: void unittests::test_case::run()
+                display: '[member function] void unittests::test_case::run()'
+                does_throw: true
+                has_static: false
+                key: void unittests::test_case::run()
+                name: run
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 0
+                    decl_string: void
+                    display: void
+                    loc_file_name: null
+                    loc_line: null
+                virtuality: pure virtual
+            member_operator:
+            - !!python/object:parser.MemberOperator
+                decl_string: ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )
+                display: '[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ='
+                name: operator=
+                symbol: '='
+    ::unittests::test_results: !!python/object:parser.Klass
+        display: '[struct] ::unittests::test_results'
+        key: ::unittests::test_results
+        name: test_results
+        private: !!python/object:parser.Private
+            display: Private
+        protected: !!python/object:parser.Protected
+            display: Protected
+        public: !!python/object:parser.Public
+            constructors:
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )'
+                key: ' ( ::unittests::test_results::* )( ::unittests::test_results const & )'
+                name: test_results
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::unittests::test_results::* )(  )'
+                key: ' ( ::unittests::test_results::* )(  )'
+                name: test_results
+            destructors:
+            - !!python/object:parser.Destructor
+                display: '[destructor]  ( ::unittests::test_results::* )(  )'
+                key: ' ( ::unittests::test_results::* )(  )'
+                name: ~test_results
+            display: Public
+            enumerations:
+            - !!python/object:parser.Enumeration
+                decl_string: ::unittests::test_results::status
+                display: '[enumeration] ::unittests::test_results::status'
+                name: status
+                values: '[(''ok'', 0), (''fail'', 1), (''error'', 2)]'
+            member_functions:
+            - !!python/object:parser.MemberFunction
+                arguments:
+                - !!python/object:parser.Argument
+                    decl_string: char const * test_name
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: char const *
+                        display: char const *
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[argument] test_name, type: char const *'
+                    name: test_name
+                - !!python/object:parser.Argument
+                    decl_string: unittests::test_results::status result
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 4
+                        decl_string: ::unittests::test_results::status
+                        display: ::unittests::test_results::status
+                        loc_file_name: examples/foo/unittests.hpp
+                        loc_line: 9
+                    display: '[argument] result, type: ::unittests::test_results::status'
+                    name: result
+                declaration: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+                display: '[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)'
+                does_throw: true
+                has_static: false
+                key: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+                name: update
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 0
+                    decl_string: void
+                    display: void
+                    loc_file_name: null
+                    loc_line: null
+                virtuality: not virtual
+            member_operator:
+            - !!python/object:parser.MemberOperator
+                decl_string: ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )
+                display: '[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ='
+                name: operator=
+                symbol: '='
+    ::unittests::test_suite: !!python/object:parser.Klass
+        display: '[struct] ::unittests::test_suite'
+        key: ::unittests::test_suite
+        name: test_suite
+        private: !!python/object:parser.Private
+            display: Private
+            variables:
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 8
+                    decl_string: ::unittests::test_container *
+                    display: ::unittests::test_container *
+                    loc_file_name: null
+                    loc_line: null
+                display: '[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *'
+                key: ::unittests::test_suite::m_tests
+                loc_file_name: examples/foo/unittests.hpp
+                loc_line: 40
+                name: m_tests
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 1
+                    decl_string: ::unittests::test_results
+                    display: ::unittests::test_results
+                    loc_file_name: examples/foo/unittests.hpp
+                    loc_line: 7
+                display: '[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results'
+                key: ::unittests::test_suite::m_results
+                loc_file_name: examples/foo/unittests.hpp
+                loc_line: 41
+                name: m_results
+        protected: !!python/object:parser.Protected
+            display: Protected
+        public: !!python/object:parser.Public
+            constructors:
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::unittests::test_suite::* )(  )'
+                key: ' ( ::unittests::test_suite::* )(  )'
+                name: test_suite
+            - !!python/object:parser.Constructor
+                display: '[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
+                key: ' ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
+                name: test_suite
+            destructors:
+            - !!python/object:parser.Destructor
+                display: '[destructor]  ( ::unittests::test_suite::* )(  )'
+                key: ' ( ::unittests::test_suite::* )(  )'
+                name: ~test_suite
+            display: Public
+            member_functions:
+            - !!python/object:parser.MemberFunction
+                declaration: void unittests::test_suite::run()
+                display: '[member function] void unittests::test_suite::run()'
+                does_throw: true
+                has_static: false
+                key: void unittests::test_suite::run()
+                name: run
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 0
+                    decl_string: void
+                    display: void
+                    loc_file_name: null
+                    loc_line: null
+                virtuality: virtual
+            - !!python/object:parser.MemberFunction
+                declaration: unittests::test_results const & unittests::test_suite::get_results() const
+                display: '[member function] unittests::test_results const & unittests::test_suite::get_results() const'
+                does_throw: true
+                has_static: false
+                key: unittests::test_results const & unittests::test_suite::get_results() const
+                name: get_results
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 8
+                    decl_string: ::unittests::test_results const &
+                    display: ::unittests::test_results const &
+                    loc_file_name: null
+                    loc_line: null
+                virtuality: not virtual
+            member_operator:
+            - !!python/object:parser.MemberOperator
+                decl_string: ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )
+                display: '[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ='
+                name: operator=
+                symbol: '='
+free_functions:
+    'int main() ': !!python/object:parser.FreeFunction
+        declaration: 'int main() '
+        display: '[free function] int main() '
+        does_throw: true
+        key: 'int main() '
+        name: main
+        return_type: !!python/object:parser.DeclaredType
             byte_size: 4
             decl_string: int
             display: int
             loc_file_name: null
             loc_line: null
-          display: '[argument] v, type: int'
-          name: v
+    'int some_name_space::add_one(int a) ': !!python/object:parser.FreeFunction
+        arguments:
         - !!python/object:parser.Argument
-          decl_string: std::string const & x1
-          decl_type: !!python/object:parser.DeclaredType
-            byte_size: 8
-            decl_string: ::std::string const &
-            display: ::std::string const &
+            decl_string: int a
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+            display: '[argument] a, type: int'
+            name: a
+        declaration: 'int some_name_space::add_one(int a) '
+        display: '[free function] int some_name_space::add_one(int a) '
+        does_throw: true
+        key: 'int some_name_space::add_one(int a) '
+        name: add_one
+        return_type: !!python/object:parser.DeclaredType
+            byte_size: 4
+            decl_string: int
+            display: int
             loc_file_name: null
             loc_line: null
-          display: '[argument] x1, type: ::std::string const &'
-          name: x1
+member_functions:
+    static std::string some_name_space::Foo::my_function(int v, std::string const & x1): !!python/object:parser.MemberFunction
+        arguments:
+        - !!python/object:parser.Argument
+            decl_string: int v
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+            display: '[argument] v, type: int'
+            name: v
+        - !!python/object:parser.Argument
+            decl_string: std::string const & x1
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 8
+                decl_string: ::std::string const &
+                display: ::std::string const &
+                loc_file_name: null
+                loc_line: null
+            display: '[argument] x1, type: ::std::string const &'
+            name: x1
         declaration: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
         display: '[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)'
         does_throw: true
@@ -84,278 +441,13 @@ classes:
         key: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
         name: my_function
         return_type: !!python/object:parser.DeclaredType
-          byte_size: 0
-          decl_string: ::std::string
-          display: ::std::string
-          loc_file_name: /usr/include/c++/9/bits/stringfwd.h
-          loc_line: 79
+            byte_size: 0
+            decl_string: ::std::string
+            display: ::std::string
+            loc_file_name: /usr/include/c++/9/bits/stringfwd.h
+            loc_line: 79
         virtuality: not virtual
-      member_operator:
-      - !!python/object:parser.MemberOperator
-        decl_string: ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )
-        display: '[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ='
-        name: operator=
-        symbol: '='
-      variables:
-      - &id017 !!python/object:parser.Variable
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 8
-          decl_string: ::uintmax_t
-          display: ::uintmax_t
-          loc_file_name: /usr/include/stdint.h
-          loc_line: 102
-        display: '[variable] ::some_name_space::Foo::a, type: ::uintmax_t'
-        key: ::some_name_space::Foo::a
-        loc_file_name: examples/foo/foo.hpp
-        loc_line: 19
-        name: a
-      - &id018 !!python/object:parser.Variable
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 8
-          decl_string: ::uintmax_t
-          display: ::uintmax_t
-          loc_file_name: /usr/include/stdint.h
-          loc_line: 102
-        display: '[variable] ::some_name_space::Foo::b, type: ::uintmax_t'
-        key: ::some_name_space::Foo::b
-        loc_file_name: examples/foo/foo.hpp
-        loc_line: 19
-        name: b
-      - &id021 !!python/object:parser.Variable
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 32
-          decl_string: ::unittests::test_suite
-          display: ::unittests::test_suite
-          loc_file_name: examples/foo/unittests.hpp
-          loc_line: 30
-        display: '[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite'
-        key: ::some_name_space::Foo::tests
-        loc_file_name: examples/foo/foo.hpp
-        loc_line: 21
-        name: tests
-  ::unittests::test_case: &id010 !!python/object:parser.Klass
-    display: '[struct] ::unittests::test_case'
-    key: ::unittests::test_case
-    name: test_case
-    private: !!python/object:parser.Private
-      display: Private
-      variables:
-      - &id022 !!python/object:parser.Variable
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 8
-          decl_string: char const *
-          display: char const *
-          loc_file_name: null
-          loc_line: null
-        display: '[variable] ::unittests::test_case::m_name, type: char const *'
-        key: ::unittests::test_case::m_name
-        loc_file_name: examples/foo/unittests.hpp
-        loc_line: 25
-        name: m_name
-    protected: !!python/object:parser.Protected
-      display: Protected
-    public: !!python/object:parser.Public
-      constructors:
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::unittests::test_case::* )( char const * )'
-        key: ' ( ::unittests::test_case::* )( char const * )'
-        name: test_case
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )'
-        key: ' ( ::unittests::test_case::* )( ::unittests::test_case const & )'
-        name: test_case
-      destructors:
-      - !!python/object:parser.Destructor
-        display: '[destructor]  ( ::unittests::test_case::* )(  )'
-        key: ' ( ::unittests::test_case::* )(  )'
-        name: ~test_case
-      display: Public
-      member_functions:
-      - &id004 !!python/object:parser.MemberFunction
-        declaration: void unittests::test_case::set_up()
-        display: '[member function] void unittests::test_case::set_up()'
-        does_throw: true
-        has_static: false
-        key: void unittests::test_case::set_up()
-        name: set_up
-        return_type: !!python/object:parser.DeclaredType
-          byte_size: 0
-          decl_string: void
-          display: void
-          loc_file_name: null
-          loc_line: null
-        virtuality: virtual
-      - &id005 !!python/object:parser.MemberFunction
-        declaration: void unittests::test_case::tear_down()
-        display: '[member function] void unittests::test_case::tear_down()'
-        does_throw: true
-        has_static: false
-        key: void unittests::test_case::tear_down()
-        name: tear_down
-        return_type: !!python/object:parser.DeclaredType
-          byte_size: 0
-          decl_string: void
-          display: void
-          loc_file_name: null
-          loc_line: null
-        virtuality: virtual
-      - &id003 !!python/object:parser.MemberFunction
-        declaration: void unittests::test_case::run()
-        display: '[member function] void unittests::test_case::run()'
-        does_throw: true
-        has_static: false
-        key: void unittests::test_case::run()
-        name: run
-        return_type: !!python/object:parser.DeclaredType
-          byte_size: 0
-          decl_string: void
-          display: void
-          loc_file_name: null
-          loc_line: null
-        virtuality: pure virtual
-      member_operator:
-      - !!python/object:parser.MemberOperator
-        decl_string: ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )
-        display: '[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ='
-        name: operator=
-        symbol: '='
-  ::unittests::test_results: &id009 !!python/object:parser.Klass
-    display: '[struct] ::unittests::test_results'
-    key: ::unittests::test_results
-    name: test_results
-    private: !!python/object:parser.Private
-      display: Private
-    protected: !!python/object:parser.Protected
-      display: Protected
-    public: !!python/object:parser.Public
-      constructors:
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )'
-        key: ' ( ::unittests::test_results::* )( ::unittests::test_results const & )'
-        name: test_results
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::unittests::test_results::* )(  )'
-        key: ' ( ::unittests::test_results::* )(  )'
-        name: test_results
-      destructors:
-      - !!python/object:parser.Destructor
-        display: '[destructor]  ( ::unittests::test_results::* )(  )'
-        key: ' ( ::unittests::test_results::* )(  )'
-        name: ~test_results
-      display: Public
-      enumerations:
-      - !!python/object:parser.Enumeration
-        decl_string: ::unittests::test_results::status
-        display: '[enumeration] ::unittests::test_results::status'
-        name: status
-        values: '[(''ok'', 0), (''fail'', 1), (''error'', 2)]'
-      member_functions:
-      - &id006 !!python/object:parser.MemberFunction
-        arguments:
-        - !!python/object:parser.Argument
-          decl_string: char const * test_name
-          decl_type: !!python/object:parser.DeclaredType
-            byte_size: 8
-            decl_string: char const *
-            display: char const *
-            loc_file_name: null
-            loc_line: null
-          display: '[argument] test_name, type: char const *'
-          name: test_name
-        - !!python/object:parser.Argument
-          decl_string: unittests::test_results::status result
-          decl_type: !!python/object:parser.DeclaredType
-            byte_size: 4
-            decl_string: ::unittests::test_results::status
-            display: ::unittests::test_results::status
-            loc_file_name: examples/foo/unittests.hpp
-            loc_line: 9
-          display: '[argument] result, type: ::unittests::test_results::status'
-          name: result
-        declaration: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
-        display: '[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)'
-        does_throw: true
-        has_static: false
-        key: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
-        name: update
-        return_type: !!python/object:parser.DeclaredType
-          byte_size: 0
-          decl_string: void
-          display: void
-          loc_file_name: null
-          loc_line: null
-        virtuality: not virtual
-      member_operator:
-      - !!python/object:parser.MemberOperator
-        decl_string: ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )
-        display: '[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ='
-        name: operator=
-        symbol: '='
-  ::unittests::test_suite: &id011 !!python/object:parser.Klass
-    display: '[struct] ::unittests::test_suite'
-    key: ::unittests::test_suite
-    name: test_suite
-    private: !!python/object:parser.Private
-      display: Private
-      variables:
-      - &id024 !!python/object:parser.Variable
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 8
-          decl_string: ::unittests::test_container *
-          display: ::unittests::test_container *
-          loc_file_name: null
-          loc_line: null
-        display: '[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *'
-        key: ::unittests::test_suite::m_tests
-        loc_file_name: examples/foo/unittests.hpp
-        loc_line: 40
-        name: m_tests
-      - &id023 !!python/object:parser.Variable
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 1
-          decl_string: ::unittests::test_results
-          display: ::unittests::test_results
-          loc_file_name: examples/foo/unittests.hpp
-          loc_line: 7
-        display: '[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results'
-        key: ::unittests::test_suite::m_results
-        loc_file_name: examples/foo/unittests.hpp
-        loc_line: 41
-        name: m_results
-    protected: !!python/object:parser.Protected
-      display: Protected
-    public: !!python/object:parser.Public
-      constructors:
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::unittests::test_suite::* )(  )'
-        key: ' ( ::unittests::test_suite::* )(  )'
-        name: test_suite
-      - !!python/object:parser.Constructor
-        display: '[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
-        key: ' ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
-        name: test_suite
-      destructors:
-      - !!python/object:parser.Destructor
-        display: '[destructor]  ( ::unittests::test_suite::* )(  )'
-        key: ' ( ::unittests::test_suite::* )(  )'
-        name: ~test_suite
-      display: Public
-      member_functions:
-      - &id007 !!python/object:parser.MemberFunction
-        declaration: void unittests::test_suite::run()
-        display: '[member function] void unittests::test_suite::run()'
-        does_throw: true
-        has_static: false
-        key: void unittests::test_suite::run()
-        name: run
-        return_type: !!python/object:parser.DeclaredType
-          byte_size: 0
-          decl_string: void
-          display: void
-          loc_file_name: null
-          loc_line: null
-        virtuality: virtual
-      - &id002 !!python/object:parser.MemberFunction
+    unittests::test_results const & unittests::test_suite::get_results() const: !!python/object:parser.MemberFunction
         declaration: unittests::test_results const & unittests::test_suite::get_results() const
         display: '[member function] unittests::test_results const & unittests::test_suite::get_results() const'
         does_throw: true
@@ -363,112 +455,1510 @@ classes:
         key: unittests::test_results const & unittests::test_suite::get_results() const
         name: get_results
         return_type: !!python/object:parser.DeclaredType
-          byte_size: 8
-          decl_string: ::unittests::test_results const &
-          display: ::unittests::test_results const &
-          loc_file_name: null
-          loc_line: null
+            byte_size: 8
+            decl_string: ::unittests::test_results const &
+            display: ::unittests::test_results const &
+            loc_file_name: null
+            loc_line: null
         virtuality: not virtual
-      member_operator:
-      - !!python/object:parser.MemberOperator
-        decl_string: ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )
-        display: '[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ='
-        name: operator=
-        symbol: '='
-free_functions:
-  'int main() ': &id008 !!python/object:parser.FreeFunction
-    declaration: 'int main() '
-    display: '[free function] int main() '
-    does_throw: true
-    key: 'int main() '
-    name: main
-    return_type: !!python/object:parser.DeclaredType
-      byte_size: 4
-      decl_string: int
-      display: int
-      loc_file_name: null
-      loc_line: null
-  'int some_name_space::add_one(int a) ': &id013 !!python/object:parser.FreeFunction
-    arguments:
-    - !!python/object:parser.Argument
-      decl_string: int a
-      decl_type: !!python/object:parser.DeclaredType
-        byte_size: 4
-        decl_string: int
-        display: int
-        loc_file_name: null
-        loc_line: null
-      display: '[argument] a, type: int'
-      name: a
-    declaration: 'int some_name_space::add_one(int a) '
-    display: '[free function] int some_name_space::add_one(int a) '
-    does_throw: true
-    key: 'int some_name_space::add_one(int a) '
-    name: add_one
-    return_type: !!python/object:parser.DeclaredType
-      byte_size: 4
-      decl_string: int
-      display: int
-      loc_file_name: null
-      loc_line: null
-member_functions:
-  static std::string some_name_space::Foo::my_function(int v, std::string const & x1): *id001
-  unittests::test_results const & unittests::test_suite::get_results() const: *id002
-  void unittests::test_case::run(): *id003
-  void unittests::test_case::set_up(): *id004
-  void unittests::test_case::tear_down(): *id005
-  void unittests::test_results::update(char const * test_name, unittests::test_results::status result): *id006
-  void unittests::test_suite::run(): *id007
+    void unittests::test_case::run(): !!python/object:parser.MemberFunction
+        declaration: void unittests::test_case::run()
+        display: '[member function] void unittests::test_case::run()'
+        does_throw: true
+        has_static: false
+        key: void unittests::test_case::run()
+        name: run
+        return_type: !!python/object:parser.DeclaredType
+            byte_size: 0
+            decl_string: void
+            display: void
+            loc_file_name: null
+            loc_line: null
+        virtuality: pure virtual
+    void unittests::test_case::set_up(): !!python/object:parser.MemberFunction
+        declaration: void unittests::test_case::set_up()
+        display: '[member function] void unittests::test_case::set_up()'
+        does_throw: true
+        has_static: false
+        key: void unittests::test_case::set_up()
+        name: set_up
+        return_type: !!python/object:parser.DeclaredType
+            byte_size: 0
+            decl_string: void
+            display: void
+            loc_file_name: null
+            loc_line: null
+        virtuality: virtual
+    void unittests::test_case::tear_down(): !!python/object:parser.MemberFunction
+        declaration: void unittests::test_case::tear_down()
+        display: '[member function] void unittests::test_case::tear_down()'
+        does_throw: true
+        has_static: false
+        key: void unittests::test_case::tear_down()
+        name: tear_down
+        return_type: !!python/object:parser.DeclaredType
+            byte_size: 0
+            decl_string: void
+            display: void
+            loc_file_name: null
+            loc_line: null
+        virtuality: virtual
+    void unittests::test_results::update(char const * test_name, unittests::test_results::status result): !!python/object:parser.MemberFunction
+        arguments:
+        - !!python/object:parser.Argument
+            decl_string: char const * test_name
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 8
+                decl_string: char const *
+                display: char const *
+                loc_file_name: null
+                loc_line: null
+            display: '[argument] test_name, type: char const *'
+            name: test_name
+        - !!python/object:parser.Argument
+            decl_string: unittests::test_results::status result
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: ::unittests::test_results::status
+                display: ::unittests::test_results::status
+                loc_file_name: examples/foo/unittests.hpp
+                loc_line: 9
+            display: '[argument] result, type: ::unittests::test_results::status'
+            name: result
+        declaration: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+        display: '[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)'
+        does_throw: true
+        has_static: false
+        key: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+        name: update
+        return_type: !!python/object:parser.DeclaredType
+            byte_size: 0
+            decl_string: void
+            display: void
+            loc_file_name: null
+            loc_line: null
+        virtuality: not virtual
+    void unittests::test_suite::run(): !!python/object:parser.MemberFunction
+        declaration: void unittests::test_suite::run()
+        display: '[member function] void unittests::test_suite::run()'
+        does_throw: true
+        has_static: false
+        key: void unittests::test_suite::run()
+        name: run
+        return_type: !!python/object:parser.DeclaredType
+            byte_size: 0
+            decl_string: void
+            display: void
+            loc_file_name: null
+            loc_line: null
+        virtuality: virtual
 namespaces:
-  '::': &id016 !!python/object:parser.NameSpace
+    '::': !!python/object:parser.NameSpace
+        display: '[namespace] ::'
+        free_functions:
+        - !!python/object:parser.FreeFunction
+            declaration: 'int main() '
+            display: '[free function] int main() '
+            does_throw: true
+            key: 'int main() '
+            name: main
+            return_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+        key: '::'
+        name: '::'
+        nss:
+        - !!python/object:parser.NameSpace
+            class_declarations:
+            - !!python/object:parser.ClassDeclaration
+                display: '[class declaration] ::unittests::test_container'
+                key: ::unittests::test_container
+                name: test_container
+            classes:
+            - !!python/object:parser.Klass
+                display: '[struct] ::unittests::test_results'
+                key: ::unittests::test_results
+                name: test_results
+                private: !!python/object:parser.Private
+                    display: Private
+                protected: !!python/object:parser.Protected
+                    display: Protected
+                public: !!python/object:parser.Public
+                    constructors:
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )'
+                        key: ' ( ::unittests::test_results::* )( ::unittests::test_results const & )'
+                        name: test_results
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::unittests::test_results::* )(  )'
+                        key: ' ( ::unittests::test_results::* )(  )'
+                        name: test_results
+                    destructors:
+                    - !!python/object:parser.Destructor
+                        display: '[destructor]  ( ::unittests::test_results::* )(  )'
+                        key: ' ( ::unittests::test_results::* )(  )'
+                        name: ~test_results
+                    display: Public
+                    enumerations:
+                    - !!python/object:parser.Enumeration
+                        decl_string: ::unittests::test_results::status
+                        display: '[enumeration] ::unittests::test_results::status'
+                        name: status
+                        values: '[(''ok'', 0), (''fail'', 1), (''error'', 2)]'
+                    member_functions:
+                    - !!python/object:parser.MemberFunction
+                        arguments:
+                        - !!python/object:parser.Argument
+                            decl_string: char const * test_name
+                            decl_type: !!python/object:parser.DeclaredType
+                                byte_size: 8
+                                decl_string: char const *
+                                display: char const *
+                                loc_file_name: null
+                                loc_line: null
+                            display: '[argument] test_name, type: char const *'
+                            name: test_name
+                        - !!python/object:parser.Argument
+                            decl_string: unittests::test_results::status result
+                            decl_type: !!python/object:parser.DeclaredType
+                                byte_size: 4
+                                decl_string: ::unittests::test_results::status
+                                display: ::unittests::test_results::status
+                                loc_file_name: examples/foo/unittests.hpp
+                                loc_line: 9
+                            display: '[argument] result, type: ::unittests::test_results::status'
+                            name: result
+                        declaration: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+                        display: '[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)'
+                        does_throw: true
+                        has_static: false
+                        key: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+                        name: update
+                        return_type: !!python/object:parser.DeclaredType
+                            byte_size: 0
+                            decl_string: void
+                            display: void
+                            loc_file_name: null
+                            loc_line: null
+                        virtuality: not virtual
+                    member_operator:
+                    - !!python/object:parser.MemberOperator
+                        decl_string: ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )
+                        display: '[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ='
+                        name: operator=
+                        symbol: '='
+            - !!python/object:parser.Klass
+                display: '[struct] ::unittests::test_case'
+                key: ::unittests::test_case
+                name: test_case
+                private: !!python/object:parser.Private
+                    display: Private
+                    variables:
+                    - !!python/object:parser.Variable
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: char const *
+                            display: char const *
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[variable] ::unittests::test_case::m_name, type: char const *'
+                        key: ::unittests::test_case::m_name
+                        loc_file_name: examples/foo/unittests.hpp
+                        loc_line: 25
+                        name: m_name
+                protected: !!python/object:parser.Protected
+                    display: Protected
+                public: !!python/object:parser.Public
+                    constructors:
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::unittests::test_case::* )( char const * )'
+                        key: ' ( ::unittests::test_case::* )( char const * )'
+                        name: test_case
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )'
+                        key: ' ( ::unittests::test_case::* )( ::unittests::test_case const & )'
+                        name: test_case
+                    destructors:
+                    - !!python/object:parser.Destructor
+                        display: '[destructor]  ( ::unittests::test_case::* )(  )'
+                        key: ' ( ::unittests::test_case::* )(  )'
+                        name: ~test_case
+                    display: Public
+                    member_functions:
+                    - !!python/object:parser.MemberFunction
+                        declaration: void unittests::test_case::set_up()
+                        display: '[member function] void unittests::test_case::set_up()'
+                        does_throw: true
+                        has_static: false
+                        key: void unittests::test_case::set_up()
+                        name: set_up
+                        return_type: !!python/object:parser.DeclaredType
+                            byte_size: 0
+                            decl_string: void
+                            display: void
+                            loc_file_name: null
+                            loc_line: null
+                        virtuality: virtual
+                    - !!python/object:parser.MemberFunction
+                        declaration: void unittests::test_case::tear_down()
+                        display: '[member function] void unittests::test_case::tear_down()'
+                        does_throw: true
+                        has_static: false
+                        key: void unittests::test_case::tear_down()
+                        name: tear_down
+                        return_type: !!python/object:parser.DeclaredType
+                            byte_size: 0
+                            decl_string: void
+                            display: void
+                            loc_file_name: null
+                            loc_line: null
+                        virtuality: virtual
+                    - !!python/object:parser.MemberFunction
+                        declaration: void unittests::test_case::run()
+                        display: '[member function] void unittests::test_case::run()'
+                        does_throw: true
+                        has_static: false
+                        key: void unittests::test_case::run()
+                        name: run
+                        return_type: !!python/object:parser.DeclaredType
+                            byte_size: 0
+                            decl_string: void
+                            display: void
+                            loc_file_name: null
+                            loc_line: null
+                        virtuality: pure virtual
+                    member_operator:
+                    - !!python/object:parser.MemberOperator
+                        decl_string: ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )
+                        display: '[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ='
+                        name: operator=
+                        symbol: '='
+            - !!python/object:parser.Klass
+                display: '[struct] ::unittests::test_suite'
+                key: ::unittests::test_suite
+                name: test_suite
+                private: !!python/object:parser.Private
+                    display: Private
+                    variables:
+                    - !!python/object:parser.Variable
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: ::unittests::test_container *
+                            display: ::unittests::test_container *
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *'
+                        key: ::unittests::test_suite::m_tests
+                        loc_file_name: examples/foo/unittests.hpp
+                        loc_line: 40
+                        name: m_tests
+                    - !!python/object:parser.Variable
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 1
+                            decl_string: ::unittests::test_results
+                            display: ::unittests::test_results
+                            loc_file_name: examples/foo/unittests.hpp
+                            loc_line: 7
+                        display: '[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results'
+                        key: ::unittests::test_suite::m_results
+                        loc_file_name: examples/foo/unittests.hpp
+                        loc_line: 41
+                        name: m_results
+                protected: !!python/object:parser.Protected
+                    display: Protected
+                public: !!python/object:parser.Public
+                    constructors:
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::unittests::test_suite::* )(  )'
+                        key: ' ( ::unittests::test_suite::* )(  )'
+                        name: test_suite
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
+                        key: ' ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
+                        name: test_suite
+                    destructors:
+                    - !!python/object:parser.Destructor
+                        display: '[destructor]  ( ::unittests::test_suite::* )(  )'
+                        key: ' ( ::unittests::test_suite::* )(  )'
+                        name: ~test_suite
+                    display: Public
+                    member_functions:
+                    - !!python/object:parser.MemberFunction
+                        declaration: void unittests::test_suite::run()
+                        display: '[member function] void unittests::test_suite::run()'
+                        does_throw: true
+                        has_static: false
+                        key: void unittests::test_suite::run()
+                        name: run
+                        return_type: !!python/object:parser.DeclaredType
+                            byte_size: 0
+                            decl_string: void
+                            display: void
+                            loc_file_name: null
+                            loc_line: null
+                        virtuality: virtual
+                    - !!python/object:parser.MemberFunction
+                        declaration: unittests::test_results const & unittests::test_suite::get_results() const
+                        display: '[member function] unittests::test_results const & unittests::test_suite::get_results() const'
+                        does_throw: true
+                        has_static: false
+                        key: unittests::test_results const & unittests::test_suite::get_results() const
+                        name: get_results
+                        return_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: ::unittests::test_results const &
+                            display: ::unittests::test_results const &
+                            loc_file_name: null
+                            loc_line: null
+                        virtuality: not virtual
+                    member_operator:
+                    - !!python/object:parser.MemberOperator
+                        decl_string: ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )
+                        display: '[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ='
+                        name: operator=
+                        symbol: '='
+            display: '[namespace] unittests'
+            key: ::unittests
+            name: unittests
+        - !!python/object:parser.NameSpace
+            classes:
+            - !!python/object:parser.Klass
+                display: '[struct] ::some_name_space::Foo'
+                key: ::some_name_space::Foo
+                name: Foo
+                private: !!python/object:parser.Private
+                    display: Private
+                    variables:
+                    - !!python/object:parser.Variable
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 1
+                            decl_string: char
+                            display: char
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[variable] ::some_name_space::Foo::c, type: char'
+                        key: ::some_name_space::Foo::c
+                        loc_file_name: examples/foo/foo.hpp
+                        loc_line: 28
+                        name: c
+                protected: !!python/object:parser.Protected
+                    display: Protected
+                    variables:
+                    - !!python/object:parser.Variable
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 4
+                            decl_string: float
+                            display: float
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[variable] ::some_name_space::Foo::d, type: float'
+                        key: ::some_name_space::Foo::d
+                        loc_file_name: examples/foo/foo.hpp
+                        loc_line: 30
+                        name: d
+                public: !!python/object:parser.Public
+                    constructors:
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::some_name_space::Foo::* )(  )'
+                        key: ' ( ::some_name_space::Foo::* )(  )'
+                        name: Foo
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
+                        key: ' ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
+                        name: Foo
+                    - !!python/object:parser.Constructor
+                        display: '[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
+                        key: ' ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
+                        name: Foo
+                    destructors:
+                    - !!python/object:parser.Destructor
+                        display: '[destructor]  ( ::some_name_space::Foo::* )(  )'
+                        key: ' ( ::some_name_space::Foo::* )(  )'
+                        name: ~Foo
+                    display: Public
+                    member_functions:
+                    - !!python/object:parser.MemberFunction
+                        arguments:
+                        - !!python/object:parser.Argument
+                            decl_string: int v
+                            decl_type: !!python/object:parser.DeclaredType
+                                byte_size: 4
+                                decl_string: int
+                                display: int
+                                loc_file_name: null
+                                loc_line: null
+                            display: '[argument] v, type: int'
+                            name: v
+                        - !!python/object:parser.Argument
+                            decl_string: std::string const & x1
+                            decl_type: !!python/object:parser.DeclaredType
+                                byte_size: 8
+                                decl_string: ::std::string const &
+                                display: ::std::string const &
+                                loc_file_name: null
+                                loc_line: null
+                            display: '[argument] x1, type: ::std::string const &'
+                            name: x1
+                        declaration: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
+                        display: '[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)'
+                        does_throw: true
+                        has_static: true
+                        key: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
+                        name: my_function
+                        return_type: !!python/object:parser.DeclaredType
+                            byte_size: 0
+                            decl_string: ::std::string
+                            display: ::std::string
+                            loc_file_name: /usr/include/c++/9/bits/stringfwd.h
+                            loc_line: 79
+                        virtuality: not virtual
+                    member_operator:
+                    - !!python/object:parser.MemberOperator
+                        decl_string: ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )
+                        display: '[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ='
+                        name: operator=
+                        symbol: '='
+                    variables:
+                    - !!python/object:parser.Variable
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: ::uintmax_t
+                            display: ::uintmax_t
+                            loc_file_name: /usr/include/stdint.h
+                            loc_line: 102
+                        display: '[variable] ::some_name_space::Foo::a, type: ::uintmax_t'
+                        key: ::some_name_space::Foo::a
+                        loc_file_name: examples/foo/foo.hpp
+                        loc_line: 19
+                        name: a
+                    - !!python/object:parser.Variable
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: ::uintmax_t
+                            display: ::uintmax_t
+                            loc_file_name: /usr/include/stdint.h
+                            loc_line: 102
+                        display: '[variable] ::some_name_space::Foo::b, type: ::uintmax_t'
+                        key: ::some_name_space::Foo::b
+                        loc_file_name: examples/foo/foo.hpp
+                        loc_line: 19
+                        name: b
+                    - !!python/object:parser.Variable
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 32
+                            decl_string: ::unittests::test_suite
+                            display: ::unittests::test_suite
+                            loc_file_name: examples/foo/unittests.hpp
+                            loc_line: 30
+                        display: '[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite'
+                        key: ::some_name_space::Foo::tests
+                        loc_file_name: examples/foo/foo.hpp
+                        loc_line: 21
+                        name: tests
+            display: '[namespace] some_name_space'
+            free_functions:
+            - !!python/object:parser.FreeFunction
+                arguments:
+                - !!python/object:parser.Argument
+                    decl_string: int a
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 4
+                        decl_string: int
+                        display: int
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[argument] a, type: int'
+                    name: a
+                declaration: 'int some_name_space::add_one(int a) '
+                display: '[free function] int some_name_space::add_one(int a) '
+                does_throw: true
+                key: 'int some_name_space::add_one(int a) '
+                name: add_one
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: int
+                    display: int
+                    loc_file_name: null
+                    loc_line: null
+            key: ::some_name_space
+            name: some_name_space
+            typedefs:
+            - !!python/object:parser.TypeDef
+                decl_string: ::some_name_space::FooAlias
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 56
+                    decl_string: ::some_name_space::Foo
+                    display: ::some_name_space::Foo
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 11
+                display: '[typedef] FooAlias, type: ::some_name_space::Foo'
+                name: FooAlias
+    ::some_name_space: !!python/object:parser.NameSpace
+        classes:
+        - !!python/object:parser.Klass
+            display: '[struct] ::some_name_space::Foo'
+            key: ::some_name_space::Foo
+            name: Foo
+            private: !!python/object:parser.Private
+                display: Private
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 1
+                        decl_string: char
+                        display: char
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[variable] ::some_name_space::Foo::c, type: char'
+                    key: ::some_name_space::Foo::c
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 28
+                    name: c
+            protected: !!python/object:parser.Protected
+                display: Protected
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 4
+                        decl_string: float
+                        display: float
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[variable] ::some_name_space::Foo::d, type: float'
+                    key: ::some_name_space::Foo::d
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 30
+                    name: d
+            public: !!python/object:parser.Public
+                constructors:
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::some_name_space::Foo::* )(  )'
+                    key: ' ( ::some_name_space::Foo::* )(  )'
+                    name: Foo
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
+                    key: ' ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
+                    name: Foo
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
+                    key: ' ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
+                    name: Foo
+                destructors:
+                - !!python/object:parser.Destructor
+                    display: '[destructor]  ( ::some_name_space::Foo::* )(  )'
+                    key: ' ( ::some_name_space::Foo::* )(  )'
+                    name: ~Foo
+                display: Public
+                member_functions:
+                - !!python/object:parser.MemberFunction
+                    arguments:
+                    - !!python/object:parser.Argument
+                        decl_string: int v
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 4
+                            decl_string: int
+                            display: int
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[argument] v, type: int'
+                        name: v
+                    - !!python/object:parser.Argument
+                        decl_string: std::string const & x1
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: ::std::string const &
+                            display: ::std::string const &
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[argument] x1, type: ::std::string const &'
+                        name: x1
+                    declaration: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
+                    display: '[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)'
+                    does_throw: true
+                    has_static: true
+                    key: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
+                    name: my_function
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: ::std::string
+                        display: ::std::string
+                        loc_file_name: /usr/include/c++/9/bits/stringfwd.h
+                        loc_line: 79
+                    virtuality: not virtual
+                member_operator:
+                - !!python/object:parser.MemberOperator
+                    decl_string: ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )
+                    display: '[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ='
+                    name: operator=
+                    symbol: '='
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::uintmax_t
+                        display: ::uintmax_t
+                        loc_file_name: /usr/include/stdint.h
+                        loc_line: 102
+                    display: '[variable] ::some_name_space::Foo::a, type: ::uintmax_t'
+                    key: ::some_name_space::Foo::a
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 19
+                    name: a
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::uintmax_t
+                        display: ::uintmax_t
+                        loc_file_name: /usr/include/stdint.h
+                        loc_line: 102
+                    display: '[variable] ::some_name_space::Foo::b, type: ::uintmax_t'
+                    key: ::some_name_space::Foo::b
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 19
+                    name: b
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 32
+                        decl_string: ::unittests::test_suite
+                        display: ::unittests::test_suite
+                        loc_file_name: examples/foo/unittests.hpp
+                        loc_line: 30
+                    display: '[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite'
+                    key: ::some_name_space::Foo::tests
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 21
+                    name: tests
+        display: '[namespace] some_name_space'
+        free_functions:
+        - !!python/object:parser.FreeFunction
+            arguments:
+            - !!python/object:parser.Argument
+                decl_string: int a
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: int
+                    display: int
+                    loc_file_name: null
+                    loc_line: null
+                display: '[argument] a, type: int'
+                name: a
+            declaration: 'int some_name_space::add_one(int a) '
+            display: '[free function] int some_name_space::add_one(int a) '
+            does_throw: true
+            key: 'int some_name_space::add_one(int a) '
+            name: add_one
+            return_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+        key: ::some_name_space
+        name: some_name_space
+        typedefs:
+        - !!python/object:parser.TypeDef
+            decl_string: ::some_name_space::FooAlias
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 56
+                decl_string: ::some_name_space::Foo
+                display: ::some_name_space::Foo
+                loc_file_name: examples/foo/foo.hpp
+                loc_line: 11
+            display: '[typedef] FooAlias, type: ::some_name_space::Foo'
+            name: FooAlias
+    ::unittests: !!python/object:parser.NameSpace
+        class_declarations:
+        - !!python/object:parser.ClassDeclaration
+            display: '[class declaration] ::unittests::test_container'
+            key: ::unittests::test_container
+            name: test_container
+        classes:
+        - !!python/object:parser.Klass
+            display: '[struct] ::unittests::test_results'
+            key: ::unittests::test_results
+            name: test_results
+            private: !!python/object:parser.Private
+                display: Private
+            protected: !!python/object:parser.Protected
+                display: Protected
+            public: !!python/object:parser.Public
+                constructors:
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )'
+                    key: ' ( ::unittests::test_results::* )( ::unittests::test_results const & )'
+                    name: test_results
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_results::* )(  )'
+                    key: ' ( ::unittests::test_results::* )(  )'
+                    name: test_results
+                destructors:
+                - !!python/object:parser.Destructor
+                    display: '[destructor]  ( ::unittests::test_results::* )(  )'
+                    key: ' ( ::unittests::test_results::* )(  )'
+                    name: ~test_results
+                display: Public
+                enumerations:
+                - !!python/object:parser.Enumeration
+                    decl_string: ::unittests::test_results::status
+                    display: '[enumeration] ::unittests::test_results::status'
+                    name: status
+                    values: '[(''ok'', 0), (''fail'', 1), (''error'', 2)]'
+                member_functions:
+                - !!python/object:parser.MemberFunction
+                    arguments:
+                    - !!python/object:parser.Argument
+                        decl_string: char const * test_name
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: char const *
+                            display: char const *
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[argument] test_name, type: char const *'
+                        name: test_name
+                    - !!python/object:parser.Argument
+                        decl_string: unittests::test_results::status result
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 4
+                            decl_string: ::unittests::test_results::status
+                            display: ::unittests::test_results::status
+                            loc_file_name: examples/foo/unittests.hpp
+                            loc_line: 9
+                        display: '[argument] result, type: ::unittests::test_results::status'
+                        name: result
+                    declaration: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+                    display: '[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+                    name: update
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: not virtual
+                member_operator:
+                - !!python/object:parser.MemberOperator
+                    decl_string: ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )
+                    display: '[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ='
+                    name: operator=
+                    symbol: '='
+        - !!python/object:parser.Klass
+            display: '[struct] ::unittests::test_case'
+            key: ::unittests::test_case
+            name: test_case
+            private: !!python/object:parser.Private
+                display: Private
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: char const *
+                        display: char const *
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[variable] ::unittests::test_case::m_name, type: char const *'
+                    key: ::unittests::test_case::m_name
+                    loc_file_name: examples/foo/unittests.hpp
+                    loc_line: 25
+                    name: m_name
+            protected: !!python/object:parser.Protected
+                display: Protected
+            public: !!python/object:parser.Public
+                constructors:
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_case::* )( char const * )'
+                    key: ' ( ::unittests::test_case::* )( char const * )'
+                    name: test_case
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )'
+                    key: ' ( ::unittests::test_case::* )( ::unittests::test_case const & )'
+                    name: test_case
+                destructors:
+                - !!python/object:parser.Destructor
+                    display: '[destructor]  ( ::unittests::test_case::* )(  )'
+                    key: ' ( ::unittests::test_case::* )(  )'
+                    name: ~test_case
+                display: Public
+                member_functions:
+                - !!python/object:parser.MemberFunction
+                    declaration: void unittests::test_case::set_up()
+                    display: '[member function] void unittests::test_case::set_up()'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_case::set_up()
+                    name: set_up
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: virtual
+                - !!python/object:parser.MemberFunction
+                    declaration: void unittests::test_case::tear_down()
+                    display: '[member function] void unittests::test_case::tear_down()'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_case::tear_down()
+                    name: tear_down
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: virtual
+                - !!python/object:parser.MemberFunction
+                    declaration: void unittests::test_case::run()
+                    display: '[member function] void unittests::test_case::run()'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_case::run()
+                    name: run
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: pure virtual
+                member_operator:
+                - !!python/object:parser.MemberOperator
+                    decl_string: ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )
+                    display: '[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ='
+                    name: operator=
+                    symbol: '='
+        - !!python/object:parser.Klass
+            display: '[struct] ::unittests::test_suite'
+            key: ::unittests::test_suite
+            name: test_suite
+            private: !!python/object:parser.Private
+                display: Private
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::unittests::test_container *
+                        display: ::unittests::test_container *
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *'
+                    key: ::unittests::test_suite::m_tests
+                    loc_file_name: examples/foo/unittests.hpp
+                    loc_line: 40
+                    name: m_tests
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 1
+                        decl_string: ::unittests::test_results
+                        display: ::unittests::test_results
+                        loc_file_name: examples/foo/unittests.hpp
+                        loc_line: 7
+                    display: '[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results'
+                    key: ::unittests::test_suite::m_results
+                    loc_file_name: examples/foo/unittests.hpp
+                    loc_line: 41
+                    name: m_results
+            protected: !!python/object:parser.Protected
+                display: Protected
+            public: !!python/object:parser.Public
+                constructors:
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_suite::* )(  )'
+                    key: ' ( ::unittests::test_suite::* )(  )'
+                    name: test_suite
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
+                    key: ' ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
+                    name: test_suite
+                destructors:
+                - !!python/object:parser.Destructor
+                    display: '[destructor]  ( ::unittests::test_suite::* )(  )'
+                    key: ' ( ::unittests::test_suite::* )(  )'
+                    name: ~test_suite
+                display: Public
+                member_functions:
+                - !!python/object:parser.MemberFunction
+                    declaration: void unittests::test_suite::run()
+                    display: '[member function] void unittests::test_suite::run()'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_suite::run()
+                    name: run
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: virtual
+                - !!python/object:parser.MemberFunction
+                    declaration: unittests::test_results const & unittests::test_suite::get_results() const
+                    display: '[member function] unittests::test_results const & unittests::test_suite::get_results() const'
+                    does_throw: true
+                    has_static: false
+                    key: unittests::test_results const & unittests::test_suite::get_results() const
+                    name: get_results
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::unittests::test_results const &
+                        display: ::unittests::test_results const &
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: not virtual
+                member_operator:
+                - !!python/object:parser.MemberOperator
+                    decl_string: ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )
+                    display: '[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ='
+                    name: operator=
+                    symbol: '='
+        display: '[namespace] unittests'
+        key: ::unittests
+        name: unittests
+nss:
+- !!python/object:parser.NameSpace
     display: '[namespace] ::'
     free_functions:
-    - *id008
+    - !!python/object:parser.FreeFunction
+        declaration: 'int main() '
+        display: '[free function] int main() '
+        does_throw: true
+        key: 'int main() '
+        name: main
+        return_type: !!python/object:parser.DeclaredType
+            byte_size: 4
+            decl_string: int
+            display: int
+            loc_file_name: null
+            loc_line: null
     key: '::'
     name: '::'
     nss:
-    - &id015 !!python/object:parser.NameSpace
-      class_declarations:
-      - !!python/object:parser.ClassDeclaration
-        display: '[class declaration] ::unittests::test_container'
-        key: ::unittests::test_container
-        name: test_container
-      classes:
-      - *id009
-      - *id010
-      - *id011
-      display: '[namespace] unittests'
-      key: ::unittests
-      name: unittests
-    - &id014 !!python/object:parser.NameSpace
-      classes:
-      - *id012
-      display: '[namespace] some_name_space'
-      free_functions:
-      - *id013
-      key: ::some_name_space
-      name: some_name_space
-      typedefs:
-      - !!python/object:parser.TypeDef
-        decl_string: ::some_name_space::FooAlias
-        decl_type: !!python/object:parser.DeclaredType
-          byte_size: 56
-          decl_string: ::some_name_space::Foo
-          display: ::some_name_space::Foo
-          loc_file_name: examples/foo/foo.hpp
-          loc_line: 11
-        display: '[typedef] FooAlias, type: ::some_name_space::Foo'
-        name: FooAlias
-  ::some_name_space: *id014
-  ::unittests: *id015
-nss:
-- *id016
+    - !!python/object:parser.NameSpace
+        class_declarations:
+        - !!python/object:parser.ClassDeclaration
+            display: '[class declaration] ::unittests::test_container'
+            key: ::unittests::test_container
+            name: test_container
+        classes:
+        - !!python/object:parser.Klass
+            display: '[struct] ::unittests::test_results'
+            key: ::unittests::test_results
+            name: test_results
+            private: !!python/object:parser.Private
+                display: Private
+            protected: !!python/object:parser.Protected
+                display: Protected
+            public: !!python/object:parser.Public
+                constructors:
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )'
+                    key: ' ( ::unittests::test_results::* )( ::unittests::test_results const & )'
+                    name: test_results
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_results::* )(  )'
+                    key: ' ( ::unittests::test_results::* )(  )'
+                    name: test_results
+                destructors:
+                - !!python/object:parser.Destructor
+                    display: '[destructor]  ( ::unittests::test_results::* )(  )'
+                    key: ' ( ::unittests::test_results::* )(  )'
+                    name: ~test_results
+                display: Public
+                enumerations:
+                - !!python/object:parser.Enumeration
+                    decl_string: ::unittests::test_results::status
+                    display: '[enumeration] ::unittests::test_results::status'
+                    name: status
+                    values: '[(''ok'', 0), (''fail'', 1), (''error'', 2)]'
+                member_functions:
+                - !!python/object:parser.MemberFunction
+                    arguments:
+                    - !!python/object:parser.Argument
+                        decl_string: char const * test_name
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: char const *
+                            display: char const *
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[argument] test_name, type: char const *'
+                        name: test_name
+                    - !!python/object:parser.Argument
+                        decl_string: unittests::test_results::status result
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 4
+                            decl_string: ::unittests::test_results::status
+                            display: ::unittests::test_results::status
+                            loc_file_name: examples/foo/unittests.hpp
+                            loc_line: 9
+                        display: '[argument] result, type: ::unittests::test_results::status'
+                        name: result
+                    declaration: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+                    display: '[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_results::update(char const * test_name, unittests::test_results::status result)
+                    name: update
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: not virtual
+                member_operator:
+                - !!python/object:parser.MemberOperator
+                    decl_string: ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )
+                    display: '[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ='
+                    name: operator=
+                    symbol: '='
+        - !!python/object:parser.Klass
+            display: '[struct] ::unittests::test_case'
+            key: ::unittests::test_case
+            name: test_case
+            private: !!python/object:parser.Private
+                display: Private
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: char const *
+                        display: char const *
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[variable] ::unittests::test_case::m_name, type: char const *'
+                    key: ::unittests::test_case::m_name
+                    loc_file_name: examples/foo/unittests.hpp
+                    loc_line: 25
+                    name: m_name
+            protected: !!python/object:parser.Protected
+                display: Protected
+            public: !!python/object:parser.Public
+                constructors:
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_case::* )( char const * )'
+                    key: ' ( ::unittests::test_case::* )( char const * )'
+                    name: test_case
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )'
+                    key: ' ( ::unittests::test_case::* )( ::unittests::test_case const & )'
+                    name: test_case
+                destructors:
+                - !!python/object:parser.Destructor
+                    display: '[destructor]  ( ::unittests::test_case::* )(  )'
+                    key: ' ( ::unittests::test_case::* )(  )'
+                    name: ~test_case
+                display: Public
+                member_functions:
+                - !!python/object:parser.MemberFunction
+                    declaration: void unittests::test_case::set_up()
+                    display: '[member function] void unittests::test_case::set_up()'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_case::set_up()
+                    name: set_up
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: virtual
+                - !!python/object:parser.MemberFunction
+                    declaration: void unittests::test_case::tear_down()
+                    display: '[member function] void unittests::test_case::tear_down()'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_case::tear_down()
+                    name: tear_down
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: virtual
+                - !!python/object:parser.MemberFunction
+                    declaration: void unittests::test_case::run()
+                    display: '[member function] void unittests::test_case::run()'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_case::run()
+                    name: run
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: pure virtual
+                member_operator:
+                - !!python/object:parser.MemberOperator
+                    decl_string: ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )
+                    display: '[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ='
+                    name: operator=
+                    symbol: '='
+        - !!python/object:parser.Klass
+            display: '[struct] ::unittests::test_suite'
+            key: ::unittests::test_suite
+            name: test_suite
+            private: !!python/object:parser.Private
+                display: Private
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::unittests::test_container *
+                        display: ::unittests::test_container *
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *'
+                    key: ::unittests::test_suite::m_tests
+                    loc_file_name: examples/foo/unittests.hpp
+                    loc_line: 40
+                    name: m_tests
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 1
+                        decl_string: ::unittests::test_results
+                        display: ::unittests::test_results
+                        loc_file_name: examples/foo/unittests.hpp
+                        loc_line: 7
+                    display: '[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results'
+                    key: ::unittests::test_suite::m_results
+                    loc_file_name: examples/foo/unittests.hpp
+                    loc_line: 41
+                    name: m_results
+            protected: !!python/object:parser.Protected
+                display: Protected
+            public: !!python/object:parser.Public
+                constructors:
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_suite::* )(  )'
+                    key: ' ( ::unittests::test_suite::* )(  )'
+                    name: test_suite
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
+                    key: ' ( ::unittests::test_suite::* )( ::unittests::test_suite const & )'
+                    name: test_suite
+                destructors:
+                - !!python/object:parser.Destructor
+                    display: '[destructor]  ( ::unittests::test_suite::* )(  )'
+                    key: ' ( ::unittests::test_suite::* )(  )'
+                    name: ~test_suite
+                display: Public
+                member_functions:
+                - !!python/object:parser.MemberFunction
+                    declaration: void unittests::test_suite::run()
+                    display: '[member function] void unittests::test_suite::run()'
+                    does_throw: true
+                    has_static: false
+                    key: void unittests::test_suite::run()
+                    name: run
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: void
+                        display: void
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: virtual
+                - !!python/object:parser.MemberFunction
+                    declaration: unittests::test_results const & unittests::test_suite::get_results() const
+                    display: '[member function] unittests::test_results const & unittests::test_suite::get_results() const'
+                    does_throw: true
+                    has_static: false
+                    key: unittests::test_results const & unittests::test_suite::get_results() const
+                    name: get_results
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::unittests::test_results const &
+                        display: ::unittests::test_results const &
+                        loc_file_name: null
+                        loc_line: null
+                    virtuality: not virtual
+                member_operator:
+                - !!python/object:parser.MemberOperator
+                    decl_string: ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )
+                    display: '[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ='
+                    name: operator=
+                    symbol: '='
+        display: '[namespace] unittests'
+        key: ::unittests
+        name: unittests
+    - !!python/object:parser.NameSpace
+        classes:
+        - !!python/object:parser.Klass
+            display: '[struct] ::some_name_space::Foo'
+            key: ::some_name_space::Foo
+            name: Foo
+            private: !!python/object:parser.Private
+                display: Private
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 1
+                        decl_string: char
+                        display: char
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[variable] ::some_name_space::Foo::c, type: char'
+                    key: ::some_name_space::Foo::c
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 28
+                    name: c
+            protected: !!python/object:parser.Protected
+                display: Protected
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 4
+                        decl_string: float
+                        display: float
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[variable] ::some_name_space::Foo::d, type: float'
+                    key: ::some_name_space::Foo::d
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 30
+                    name: d
+            public: !!python/object:parser.Public
+                constructors:
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::some_name_space::Foo::* )(  )'
+                    key: ' ( ::some_name_space::Foo::* )(  )'
+                    name: Foo
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
+                    key: ' ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )'
+                    name: Foo
+                - !!python/object:parser.Constructor
+                    display: '[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
+                    key: ' ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )'
+                    name: Foo
+                destructors:
+                - !!python/object:parser.Destructor
+                    display: '[destructor]  ( ::some_name_space::Foo::* )(  )'
+                    key: ' ( ::some_name_space::Foo::* )(  )'
+                    name: ~Foo
+                display: Public
+                member_functions:
+                - !!python/object:parser.MemberFunction
+                    arguments:
+                    - !!python/object:parser.Argument
+                        decl_string: int v
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 4
+                            decl_string: int
+                            display: int
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[argument] v, type: int'
+                        name: v
+                    - !!python/object:parser.Argument
+                        decl_string: std::string const & x1
+                        decl_type: !!python/object:parser.DeclaredType
+                            byte_size: 8
+                            decl_string: ::std::string const &
+                            display: ::std::string const &
+                            loc_file_name: null
+                            loc_line: null
+                        display: '[argument] x1, type: ::std::string const &'
+                        name: x1
+                    declaration: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
+                    display: '[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)'
+                    does_throw: true
+                    has_static: true
+                    key: static std::string some_name_space::Foo::my_function(int v, std::string const & x1)
+                    name: my_function
+                    return_type: !!python/object:parser.DeclaredType
+                        byte_size: 0
+                        decl_string: ::std::string
+                        display: ::std::string
+                        loc_file_name: /usr/include/c++/9/bits/stringfwd.h
+                        loc_line: 79
+                    virtuality: not virtual
+                member_operator:
+                - !!python/object:parser.MemberOperator
+                    decl_string: ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )
+                    display: '[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ='
+                    name: operator=
+                    symbol: '='
+                variables:
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::uintmax_t
+                        display: ::uintmax_t
+                        loc_file_name: /usr/include/stdint.h
+                        loc_line: 102
+                    display: '[variable] ::some_name_space::Foo::a, type: ::uintmax_t'
+                    key: ::some_name_space::Foo::a
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 19
+                    name: a
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 8
+                        decl_string: ::uintmax_t
+                        display: ::uintmax_t
+                        loc_file_name: /usr/include/stdint.h
+                        loc_line: 102
+                    display: '[variable] ::some_name_space::Foo::b, type: ::uintmax_t'
+                    key: ::some_name_space::Foo::b
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 19
+                    name: b
+                - !!python/object:parser.Variable
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 32
+                        decl_string: ::unittests::test_suite
+                        display: ::unittests::test_suite
+                        loc_file_name: examples/foo/unittests.hpp
+                        loc_line: 30
+                    display: '[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite'
+                    key: ::some_name_space::Foo::tests
+                    loc_file_name: examples/foo/foo.hpp
+                    loc_line: 21
+                    name: tests
+        display: '[namespace] some_name_space'
+        free_functions:
+        - !!python/object:parser.FreeFunction
+            arguments:
+            - !!python/object:parser.Argument
+                decl_string: int a
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: int
+                    display: int
+                    loc_file_name: null
+                    loc_line: null
+                display: '[argument] a, type: int'
+                name: a
+            declaration: 'int some_name_space::add_one(int a) '
+            display: '[free function] int some_name_space::add_one(int a) '
+            does_throw: true
+            key: 'int some_name_space::add_one(int a) '
+            name: add_one
+            return_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+        key: ::some_name_space
+        name: some_name_space
+        typedefs:
+        - !!python/object:parser.TypeDef
+            decl_string: ::some_name_space::FooAlias
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 56
+                decl_string: ::some_name_space::Foo
+                display: ::some_name_space::Foo
+                loc_file_name: examples/foo/foo.hpp
+                loc_line: 11
+            display: '[typedef] FooAlias, type: ::some_name_space::Foo'
+            name: FooAlias
 variables:
-  ::some_name_space::Foo::a: *id017
-  ::some_name_space::Foo::b: *id018
-  ::some_name_space::Foo::c: *id019
-  ::some_name_space::Foo::d: *id020
-  ::some_name_space::Foo::tests: *id021
-  ::unittests::test_case::m_name: *id022
-  ::unittests::test_suite::m_results: *id023
-  ::unittests::test_suite::m_tests: *id024
+    ::some_name_space::Foo::a: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 8
+            decl_string: ::uintmax_t
+            display: ::uintmax_t
+            loc_file_name: /usr/include/stdint.h
+            loc_line: 102
+        display: '[variable] ::some_name_space::Foo::a, type: ::uintmax_t'
+        key: ::some_name_space::Foo::a
+        loc_file_name: examples/foo/foo.hpp
+        loc_line: 19
+        name: a
+    ::some_name_space::Foo::b: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 8
+            decl_string: ::uintmax_t
+            display: ::uintmax_t
+            loc_file_name: /usr/include/stdint.h
+            loc_line: 102
+        display: '[variable] ::some_name_space::Foo::b, type: ::uintmax_t'
+        key: ::some_name_space::Foo::b
+        loc_file_name: examples/foo/foo.hpp
+        loc_line: 19
+        name: b
+    ::some_name_space::Foo::c: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 1
+            decl_string: char
+            display: char
+            loc_file_name: null
+            loc_line: null
+        display: '[variable] ::some_name_space::Foo::c, type: char'
+        key: ::some_name_space::Foo::c
+        loc_file_name: examples/foo/foo.hpp
+        loc_line: 28
+        name: c
+    ::some_name_space::Foo::d: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 4
+            decl_string: float
+            display: float
+            loc_file_name: null
+            loc_line: null
+        display: '[variable] ::some_name_space::Foo::d, type: float'
+        key: ::some_name_space::Foo::d
+        loc_file_name: examples/foo/foo.hpp
+        loc_line: 30
+        name: d
+    ::some_name_space::Foo::tests: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 32
+            decl_string: ::unittests::test_suite
+            display: ::unittests::test_suite
+            loc_file_name: examples/foo/unittests.hpp
+            loc_line: 30
+        display: '[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite'
+        key: ::some_name_space::Foo::tests
+        loc_file_name: examples/foo/foo.hpp
+        loc_line: 21
+        name: tests
+    ::unittests::test_case::m_name: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 8
+            decl_string: char const *
+            display: char const *
+            loc_file_name: null
+            loc_line: null
+        display: '[variable] ::unittests::test_case::m_name, type: char const *'
+        key: ::unittests::test_case::m_name
+        loc_file_name: examples/foo/unittests.hpp
+        loc_line: 25
+        name: m_name
+    ::unittests::test_suite::m_results: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 1
+            decl_string: ::unittests::test_results
+            display: ::unittests::test_results
+            loc_file_name: examples/foo/unittests.hpp
+            loc_line: 7
+        display: '[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results'
+        key: ::unittests::test_suite::m_results
+        loc_file_name: examples/foo/unittests.hpp
+        loc_line: 41
+        name: m_results
+    ::unittests::test_suite::m_tests: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 8
+            decl_string: ::unittests::test_container *
+            display: ::unittests::test_container *
+            loc_file_name: null
+            loc_line: null
+        display: '[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *'
+        key: ::unittests::test_suite::m_tests
+        loc_file_name: examples/foo/unittests.hpp
+        loc_line: 40
+        name: m_tests

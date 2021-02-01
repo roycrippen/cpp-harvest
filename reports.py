@@ -6,6 +6,11 @@ from config import Report, Config
 from parser import Tree
 
 
+class NoAliasDumper(yaml.Dumper):
+    def ignore_aliases(self, data):
+        return True
+
+
 class Reports:
     def __init__(self, tree: Tree, config: Config):
         self.tree = tree
@@ -38,13 +43,17 @@ class Reports:
                     print(f'type = {type(obj).__name__}')
 
         if report.output_yaml is not None:
-            self.write_yaml(yaml.dump(objs, default_flow_style=False, width=240), report.output_yaml)
+            self.write_yaml(yaml.dump(objs, Dumper=NoAliasDumper, default_flow_style=False, indent=4, width=240),
+                            report.output_yaml)
 
     def run_result_report(self, report: Report):
         if not report.show_screen and report.output_yaml is None:
             return
 
-        yaml_str = yaml.dump(self.tree, default_flow_style=False, width=240)
+        yaml_str = yaml.dump(self.tree, Dumper=NoAliasDumper, default_flow_style=False, indent=4, width=240)
+
+        # approximately 4 times smaller with references
+        # yaml_str = yaml.dump(self.tree, default_flow_style=False, indent=4, width=240)
 
         if report.show_screen:
             print('\nprint tree in yaml format...')

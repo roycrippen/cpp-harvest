@@ -1,0 +1,2457 @@
+{
+    "nss": [
+        {
+            "name": "::",
+            "key": "::",
+            "display": "[namespace] ::",
+            "nss": [
+                {
+                    "name": "unittests",
+                    "key": "::unittests",
+                    "display": "[namespace] unittests",
+                    "classes": [
+                        {
+                            "name": "test_results",
+                            "key": "::unittests::test_results",
+                            "private": {
+                                "display": "Private"
+                            },
+                            "protected": {
+                                "display": "Protected"
+                            },
+                            "public": {
+                                "display": "Public",
+                                "enumerations": [
+                                    {
+                                        "name": "status",
+                                        "decl_string": "::unittests::test_results::status",
+                                        "values": "[('ok', 0), ('fail', 1), ('error', 2)]",
+                                        "display": "[enumeration] ::unittests::test_results::status"
+                                    }
+                                ],
+                                "member_functions": [
+                                    {
+                                        "declaration": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                        "name": "update",
+                                        "key": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "not virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                        "arguments": [
+                                            {
+                                                "name": "test_name",
+                                                "decl_string": "char const * test_name",
+                                                "decl_type": {
+                                                    "decl_string": "char const *",
+                                                    "display": "char const *",
+                                                    "byte_size": 8,
+                                                    "loc_file_name": null,
+                                                    "loc_line": null
+                                                },
+                                                "display": "[argument] test_name, type: char const *"
+                                            },
+                                            {
+                                                "name": "result",
+                                                "decl_string": "unittests::test_results::status result",
+                                                "decl_type": {
+                                                    "decl_string": "::unittests::test_results::status",
+                                                    "display": "::unittests::test_results::status",
+                                                    "byte_size": 4,
+                                                    "loc_file_name": "examples/foo/unittests.hpp",
+                                                    "loc_line": 9
+                                                },
+                                                "display": "[argument] result, type: ::unittests::test_results::status"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "member_operator": [
+                                    {
+                                        "name": "operator=",
+                                        "decl_string": "::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )",
+                                        "symbol": "=",
+                                        "display": "[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ="
+                                    }
+                                ],
+                                "destructors": [
+                                    {
+                                        "name": "~test_results",
+                                        "key": " ( ::unittests::test_results::* )(  )",
+                                        "display": "[destructor]  ( ::unittests::test_results::* )(  )"
+                                    }
+                                ],
+                                "constructors": [
+                                    {
+                                        "name": "test_results",
+                                        "key": " ( ::unittests::test_results::* )( ::unittests::test_results const & )",
+                                        "display": "[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )"
+                                    },
+                                    {
+                                        "name": "test_results",
+                                        "key": " ( ::unittests::test_results::* )(  )",
+                                        "display": "[constructor]  ( ::unittests::test_results::* )(  )"
+                                    }
+                                ]
+                            },
+                            "display": "[struct] ::unittests::test_results"
+                        },
+                        {
+                            "name": "test_case",
+                            "key": "::unittests::test_case",
+                            "private": {
+                                "display": "Private",
+                                "variables": [
+                                    {
+                                        "key": "::unittests::test_case::m_name",
+                                        "name": "m_name",
+                                        "decl_type": {
+                                            "decl_string": "char const *",
+                                            "display": "char const *",
+                                            "byte_size": 8,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "loc_file_name": "examples/foo/unittests.hpp",
+                                        "loc_line": 25,
+                                        "display": "[variable] ::unittests::test_case::m_name, type: char const *"
+                                    }
+                                ]
+                            },
+                            "protected": {
+                                "display": "Protected"
+                            },
+                            "public": {
+                                "display": "Public",
+                                "constructors": [
+                                    {
+                                        "name": "test_case",
+                                        "key": " ( ::unittests::test_case::* )( char const * )",
+                                        "display": "[constructor]  ( ::unittests::test_case::* )( char const * )"
+                                    },
+                                    {
+                                        "name": "test_case",
+                                        "key": " ( ::unittests::test_case::* )( ::unittests::test_case const & )",
+                                        "display": "[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )"
+                                    }
+                                ],
+                                "member_functions": [
+                                    {
+                                        "declaration": "void unittests::test_case::set_up()",
+                                        "name": "set_up",
+                                        "key": "void unittests::test_case::set_up()",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_case::set_up()"
+                                    },
+                                    {
+                                        "declaration": "void unittests::test_case::tear_down()",
+                                        "name": "tear_down",
+                                        "key": "void unittests::test_case::tear_down()",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_case::tear_down()"
+                                    },
+                                    {
+                                        "declaration": "void unittests::test_case::run()",
+                                        "name": "run",
+                                        "key": "void unittests::test_case::run()",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "pure virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_case::run()"
+                                    }
+                                ],
+                                "member_operator": [
+                                    {
+                                        "name": "operator=",
+                                        "decl_string": "::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )",
+                                        "symbol": "=",
+                                        "display": "[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ="
+                                    }
+                                ],
+                                "destructors": [
+                                    {
+                                        "name": "~test_case",
+                                        "key": " ( ::unittests::test_case::* )(  )",
+                                        "display": "[destructor]  ( ::unittests::test_case::* )(  )"
+                                    }
+                                ]
+                            },
+                            "display": "[struct] ::unittests::test_case"
+                        },
+                        {
+                            "name": "test_suite",
+                            "key": "::unittests::test_suite",
+                            "private": {
+                                "display": "Private",
+                                "variables": [
+                                    {
+                                        "key": "::unittests::test_suite::m_tests",
+                                        "name": "m_tests",
+                                        "decl_type": {
+                                            "decl_string": "::unittests::test_container *",
+                                            "display": "::unittests::test_container *",
+                                            "byte_size": 8,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "loc_file_name": "examples/foo/unittests.hpp",
+                                        "loc_line": 40,
+                                        "display": "[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *"
+                                    },
+                                    {
+                                        "key": "::unittests::test_suite::m_results",
+                                        "name": "m_results",
+                                        "decl_type": {
+                                            "decl_string": "::unittests::test_results",
+                                            "display": "::unittests::test_results",
+                                            "byte_size": 1,
+                                            "loc_file_name": "examples/foo/unittests.hpp",
+                                            "loc_line": 7
+                                        },
+                                        "loc_file_name": "examples/foo/unittests.hpp",
+                                        "loc_line": 41,
+                                        "display": "[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results"
+                                    }
+                                ]
+                            },
+                            "protected": {
+                                "display": "Protected"
+                            },
+                            "public": {
+                                "display": "Public",
+                                "constructors": [
+                                    {
+                                        "name": "test_suite",
+                                        "key": " ( ::unittests::test_suite::* )(  )",
+                                        "display": "[constructor]  ( ::unittests::test_suite::* )(  )"
+                                    },
+                                    {
+                                        "name": "test_suite",
+                                        "key": " ( ::unittests::test_suite::* )( ::unittests::test_suite const & )",
+                                        "display": "[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )"
+                                    }
+                                ],
+                                "member_functions": [
+                                    {
+                                        "declaration": "void unittests::test_suite::run()",
+                                        "name": "run",
+                                        "key": "void unittests::test_suite::run()",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_suite::run()"
+                                    },
+                                    {
+                                        "declaration": "unittests::test_results const & unittests::test_suite::get_results() const",
+                                        "name": "get_results",
+                                        "key": "unittests::test_results const & unittests::test_suite::get_results() const",
+                                        "return_type": {
+                                            "decl_string": "::unittests::test_results const &",
+                                            "display": "::unittests::test_results const &",
+                                            "byte_size": 8,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "not virtual",
+                                        "has_static": false,
+                                        "display": "[member function] unittests::test_results const & unittests::test_suite::get_results() const"
+                                    }
+                                ],
+                                "member_operator": [
+                                    {
+                                        "name": "operator=",
+                                        "decl_string": "::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )",
+                                        "symbol": "=",
+                                        "display": "[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ="
+                                    }
+                                ],
+                                "destructors": [
+                                    {
+                                        "name": "~test_suite",
+                                        "key": " ( ::unittests::test_suite::* )(  )",
+                                        "display": "[destructor]  ( ::unittests::test_suite::* )(  )"
+                                    }
+                                ]
+                            },
+                            "display": "[struct] ::unittests::test_suite"
+                        }
+                    ],
+                    "class_declarations": [
+                        {
+                            "name": "test_container",
+                            "key": "::unittests::test_container",
+                            "display": "[class declaration] ::unittests::test_container"
+                        }
+                    ]
+                },
+                {
+                    "name": "some_name_space",
+                    "key": "::some_name_space",
+                    "display": "[namespace] some_name_space",
+                    "classes": [
+                        {
+                            "name": "Foo",
+                            "key": "::some_name_space::Foo",
+                            "private": {
+                                "display": "Private",
+                                "variables": [
+                                    {
+                                        "key": "::some_name_space::Foo::c",
+                                        "name": "c",
+                                        "decl_type": {
+                                            "decl_string": "char",
+                                            "display": "char",
+                                            "byte_size": 1,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 28,
+                                        "display": "[variable] ::some_name_space::Foo::c, type: char"
+                                    }
+                                ]
+                            },
+                            "protected": {
+                                "display": "Protected",
+                                "variables": [
+                                    {
+                                        "key": "::some_name_space::Foo::d",
+                                        "name": "d",
+                                        "decl_type": {
+                                            "decl_string": "float",
+                                            "display": "float",
+                                            "byte_size": 4,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 30,
+                                        "display": "[variable] ::some_name_space::Foo::d, type: float"
+                                    }
+                                ]
+                            },
+                            "public": {
+                                "display": "Public",
+                                "constructors": [
+                                    {
+                                        "name": "Foo",
+                                        "key": " ( ::some_name_space::Foo::* )(  )",
+                                        "display": "[constructor]  ( ::some_name_space::Foo::* )(  )"
+                                    },
+                                    {
+                                        "name": "Foo",
+                                        "key": " ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )",
+                                        "display": "[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )"
+                                    },
+                                    {
+                                        "name": "Foo",
+                                        "key": " ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )",
+                                        "display": "[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )"
+                                    }
+                                ],
+                                "variables": [
+                                    {
+                                        "key": "::some_name_space::Foo::a",
+                                        "name": "a",
+                                        "decl_type": {
+                                            "decl_string": "::uintmax_t",
+                                            "display": "::uintmax_t",
+                                            "byte_size": 8,
+                                            "loc_file_name": "/usr/include/stdint.h",
+                                            "loc_line": 102
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 19,
+                                        "display": "[variable] ::some_name_space::Foo::a, type: ::uintmax_t"
+                                    },
+                                    {
+                                        "key": "::some_name_space::Foo::b",
+                                        "name": "b",
+                                        "decl_type": {
+                                            "decl_string": "::uintmax_t",
+                                            "display": "::uintmax_t",
+                                            "byte_size": 8,
+                                            "loc_file_name": "/usr/include/stdint.h",
+                                            "loc_line": 102
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 19,
+                                        "display": "[variable] ::some_name_space::Foo::b, type: ::uintmax_t"
+                                    },
+                                    {
+                                        "key": "::some_name_space::Foo::tests",
+                                        "name": "tests",
+                                        "decl_type": {
+                                            "decl_string": "::unittests::test_suite",
+                                            "display": "::unittests::test_suite",
+                                            "byte_size": 32,
+                                            "loc_file_name": "examples/foo/unittests.hpp",
+                                            "loc_line": 30
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 21,
+                                        "display": "[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite"
+                                    }
+                                ],
+                                "member_functions": [
+                                    {
+                                        "declaration": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                        "name": "my_function",
+                                        "key": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                        "return_type": {
+                                            "decl_string": "::std::string",
+                                            "display": "::std::string",
+                                            "byte_size": 0,
+                                            "loc_file_name": "/usr/include/c++/9/bits/stringfwd.h",
+                                            "loc_line": 79
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "not virtual",
+                                        "has_static": true,
+                                        "display": "[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                        "arguments": [
+                                            {
+                                                "name": "v",
+                                                "decl_string": "int v",
+                                                "decl_type": {
+                                                    "decl_string": "int",
+                                                    "display": "int",
+                                                    "byte_size": 4,
+                                                    "loc_file_name": null,
+                                                    "loc_line": null
+                                                },
+                                                "display": "[argument] v, type: int"
+                                            },
+                                            {
+                                                "name": "x1",
+                                                "decl_string": "std::string const & x1",
+                                                "decl_type": {
+                                                    "decl_string": "::std::string const &",
+                                                    "display": "::std::string const &",
+                                                    "byte_size": 8,
+                                                    "loc_file_name": null,
+                                                    "loc_line": null
+                                                },
+                                                "display": "[argument] x1, type: ::std::string const &"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "member_operator": [
+                                    {
+                                        "name": "operator=",
+                                        "decl_string": "::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )",
+                                        "symbol": "=",
+                                        "display": "[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ="
+                                    }
+                                ],
+                                "destructors": [
+                                    {
+                                        "name": "~Foo",
+                                        "key": " ( ::some_name_space::Foo::* )(  )",
+                                        "display": "[destructor]  ( ::some_name_space::Foo::* )(  )"
+                                    }
+                                ]
+                            },
+                            "display": "[struct] ::some_name_space::Foo"
+                        }
+                    ],
+                    "typedefs": [
+                        {
+                            "name": "FooAlias",
+                            "decl_string": "::some_name_space::FooAlias",
+                            "decl_type": {
+                                "decl_string": "::some_name_space::Foo",
+                                "display": "::some_name_space::Foo",
+                                "byte_size": 56,
+                                "loc_file_name": "examples/foo/foo.hpp",
+                                "loc_line": 11
+                            },
+                            "display": "[typedef] FooAlias, type: ::some_name_space::Foo"
+                        }
+                    ],
+                    "free_functions": [
+                        {
+                            "declaration": "int some_name_space::add_one(int a) ",
+                            "name": "add_one",
+                            "key": "int some_name_space::add_one(int a) ",
+                            "return_type": {
+                                "decl_string": "int",
+                                "display": "int",
+                                "byte_size": 4,
+                                "loc_file_name": null,
+                                "loc_line": null
+                            },
+                            "does_throw": true,
+                            "display": "[free function] int some_name_space::add_one(int a) ",
+                            "arguments": [
+                                {
+                                    "name": "a",
+                                    "decl_string": "int a",
+                                    "decl_type": {
+                                        "decl_string": "int",
+                                        "display": "int",
+                                        "byte_size": 4,
+                                        "loc_file_name": null,
+                                        "loc_line": null
+                                    },
+                                    "display": "[argument] a, type: int"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "free_functions": [
+                {
+                    "declaration": "int main() ",
+                    "name": "main",
+                    "key": "int main() ",
+                    "return_type": {
+                        "decl_string": "int",
+                        "display": "int",
+                        "byte_size": 4,
+                        "loc_file_name": null,
+                        "loc_line": null
+                    },
+                    "does_throw": true,
+                    "display": "[free function] int main() "
+                }
+            ]
+        }
+    ],
+    "namespaces": {
+        "::unittests": {
+            "name": "unittests",
+            "key": "::unittests",
+            "display": "[namespace] unittests",
+            "classes": [
+                {
+                    "name": "test_results",
+                    "key": "::unittests::test_results",
+                    "private": {
+                        "display": "Private"
+                    },
+                    "protected": {
+                        "display": "Protected"
+                    },
+                    "public": {
+                        "display": "Public",
+                        "enumerations": [
+                            {
+                                "name": "status",
+                                "decl_string": "::unittests::test_results::status",
+                                "values": "[('ok', 0), ('fail', 1), ('error', 2)]",
+                                "display": "[enumeration] ::unittests::test_results::status"
+                            }
+                        ],
+                        "member_functions": [
+                            {
+                                "declaration": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                "name": "update",
+                                "key": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                "return_type": {
+                                    "decl_string": "void",
+                                    "display": "void",
+                                    "byte_size": 0,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "does_throw": true,
+                                "virtuality": "not virtual",
+                                "has_static": false,
+                                "display": "[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                "arguments": [
+                                    {
+                                        "name": "test_name",
+                                        "decl_string": "char const * test_name",
+                                        "decl_type": {
+                                            "decl_string": "char const *",
+                                            "display": "char const *",
+                                            "byte_size": 8,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "display": "[argument] test_name, type: char const *"
+                                    },
+                                    {
+                                        "name": "result",
+                                        "decl_string": "unittests::test_results::status result",
+                                        "decl_type": {
+                                            "decl_string": "::unittests::test_results::status",
+                                            "display": "::unittests::test_results::status",
+                                            "byte_size": 4,
+                                            "loc_file_name": "examples/foo/unittests.hpp",
+                                            "loc_line": 9
+                                        },
+                                        "display": "[argument] result, type: ::unittests::test_results::status"
+                                    }
+                                ]
+                            }
+                        ],
+                        "member_operator": [
+                            {
+                                "name": "operator=",
+                                "decl_string": "::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )",
+                                "symbol": "=",
+                                "display": "[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ="
+                            }
+                        ],
+                        "destructors": [
+                            {
+                                "name": "~test_results",
+                                "key": " ( ::unittests::test_results::* )(  )",
+                                "display": "[destructor]  ( ::unittests::test_results::* )(  )"
+                            }
+                        ],
+                        "constructors": [
+                            {
+                                "name": "test_results",
+                                "key": " ( ::unittests::test_results::* )( ::unittests::test_results const & )",
+                                "display": "[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )"
+                            },
+                            {
+                                "name": "test_results",
+                                "key": " ( ::unittests::test_results::* )(  )",
+                                "display": "[constructor]  ( ::unittests::test_results::* )(  )"
+                            }
+                        ]
+                    },
+                    "display": "[struct] ::unittests::test_results"
+                },
+                {
+                    "name": "test_case",
+                    "key": "::unittests::test_case",
+                    "private": {
+                        "display": "Private",
+                        "variables": [
+                            {
+                                "key": "::unittests::test_case::m_name",
+                                "name": "m_name",
+                                "decl_type": {
+                                    "decl_string": "char const *",
+                                    "display": "char const *",
+                                    "byte_size": 8,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "loc_file_name": "examples/foo/unittests.hpp",
+                                "loc_line": 25,
+                                "display": "[variable] ::unittests::test_case::m_name, type: char const *"
+                            }
+                        ]
+                    },
+                    "protected": {
+                        "display": "Protected"
+                    },
+                    "public": {
+                        "display": "Public",
+                        "constructors": [
+                            {
+                                "name": "test_case",
+                                "key": " ( ::unittests::test_case::* )( char const * )",
+                                "display": "[constructor]  ( ::unittests::test_case::* )( char const * )"
+                            },
+                            {
+                                "name": "test_case",
+                                "key": " ( ::unittests::test_case::* )( ::unittests::test_case const & )",
+                                "display": "[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )"
+                            }
+                        ],
+                        "member_functions": [
+                            {
+                                "declaration": "void unittests::test_case::set_up()",
+                                "name": "set_up",
+                                "key": "void unittests::test_case::set_up()",
+                                "return_type": {
+                                    "decl_string": "void",
+                                    "display": "void",
+                                    "byte_size": 0,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "does_throw": true,
+                                "virtuality": "virtual",
+                                "has_static": false,
+                                "display": "[member function] void unittests::test_case::set_up()"
+                            },
+                            {
+                                "declaration": "void unittests::test_case::tear_down()",
+                                "name": "tear_down",
+                                "key": "void unittests::test_case::tear_down()",
+                                "return_type": {
+                                    "decl_string": "void",
+                                    "display": "void",
+                                    "byte_size": 0,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "does_throw": true,
+                                "virtuality": "virtual",
+                                "has_static": false,
+                                "display": "[member function] void unittests::test_case::tear_down()"
+                            },
+                            {
+                                "declaration": "void unittests::test_case::run()",
+                                "name": "run",
+                                "key": "void unittests::test_case::run()",
+                                "return_type": {
+                                    "decl_string": "void",
+                                    "display": "void",
+                                    "byte_size": 0,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "does_throw": true,
+                                "virtuality": "pure virtual",
+                                "has_static": false,
+                                "display": "[member function] void unittests::test_case::run()"
+                            }
+                        ],
+                        "member_operator": [
+                            {
+                                "name": "operator=",
+                                "decl_string": "::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )",
+                                "symbol": "=",
+                                "display": "[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ="
+                            }
+                        ],
+                        "destructors": [
+                            {
+                                "name": "~test_case",
+                                "key": " ( ::unittests::test_case::* )(  )",
+                                "display": "[destructor]  ( ::unittests::test_case::* )(  )"
+                            }
+                        ]
+                    },
+                    "display": "[struct] ::unittests::test_case"
+                },
+                {
+                    "name": "test_suite",
+                    "key": "::unittests::test_suite",
+                    "private": {
+                        "display": "Private",
+                        "variables": [
+                            {
+                                "key": "::unittests::test_suite::m_tests",
+                                "name": "m_tests",
+                                "decl_type": {
+                                    "decl_string": "::unittests::test_container *",
+                                    "display": "::unittests::test_container *",
+                                    "byte_size": 8,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "loc_file_name": "examples/foo/unittests.hpp",
+                                "loc_line": 40,
+                                "display": "[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *"
+                            },
+                            {
+                                "key": "::unittests::test_suite::m_results",
+                                "name": "m_results",
+                                "decl_type": {
+                                    "decl_string": "::unittests::test_results",
+                                    "display": "::unittests::test_results",
+                                    "byte_size": 1,
+                                    "loc_file_name": "examples/foo/unittests.hpp",
+                                    "loc_line": 7
+                                },
+                                "loc_file_name": "examples/foo/unittests.hpp",
+                                "loc_line": 41,
+                                "display": "[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results"
+                            }
+                        ]
+                    },
+                    "protected": {
+                        "display": "Protected"
+                    },
+                    "public": {
+                        "display": "Public",
+                        "constructors": [
+                            {
+                                "name": "test_suite",
+                                "key": " ( ::unittests::test_suite::* )(  )",
+                                "display": "[constructor]  ( ::unittests::test_suite::* )(  )"
+                            },
+                            {
+                                "name": "test_suite",
+                                "key": " ( ::unittests::test_suite::* )( ::unittests::test_suite const & )",
+                                "display": "[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )"
+                            }
+                        ],
+                        "member_functions": [
+                            {
+                                "declaration": "void unittests::test_suite::run()",
+                                "name": "run",
+                                "key": "void unittests::test_suite::run()",
+                                "return_type": {
+                                    "decl_string": "void",
+                                    "display": "void",
+                                    "byte_size": 0,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "does_throw": true,
+                                "virtuality": "virtual",
+                                "has_static": false,
+                                "display": "[member function] void unittests::test_suite::run()"
+                            },
+                            {
+                                "declaration": "unittests::test_results const & unittests::test_suite::get_results() const",
+                                "name": "get_results",
+                                "key": "unittests::test_results const & unittests::test_suite::get_results() const",
+                                "return_type": {
+                                    "decl_string": "::unittests::test_results const &",
+                                    "display": "::unittests::test_results const &",
+                                    "byte_size": 8,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "does_throw": true,
+                                "virtuality": "not virtual",
+                                "has_static": false,
+                                "display": "[member function] unittests::test_results const & unittests::test_suite::get_results() const"
+                            }
+                        ],
+                        "member_operator": [
+                            {
+                                "name": "operator=",
+                                "decl_string": "::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )",
+                                "symbol": "=",
+                                "display": "[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ="
+                            }
+                        ],
+                        "destructors": [
+                            {
+                                "name": "~test_suite",
+                                "key": " ( ::unittests::test_suite::* )(  )",
+                                "display": "[destructor]  ( ::unittests::test_suite::* )(  )"
+                            }
+                        ]
+                    },
+                    "display": "[struct] ::unittests::test_suite"
+                }
+            ],
+            "class_declarations": [
+                {
+                    "name": "test_container",
+                    "key": "::unittests::test_container",
+                    "display": "[class declaration] ::unittests::test_container"
+                }
+            ]
+        },
+        "::some_name_space": {
+            "name": "some_name_space",
+            "key": "::some_name_space",
+            "display": "[namespace] some_name_space",
+            "classes": [
+                {
+                    "name": "Foo",
+                    "key": "::some_name_space::Foo",
+                    "private": {
+                        "display": "Private",
+                        "variables": [
+                            {
+                                "key": "::some_name_space::Foo::c",
+                                "name": "c",
+                                "decl_type": {
+                                    "decl_string": "char",
+                                    "display": "char",
+                                    "byte_size": 1,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "loc_file_name": "examples/foo/foo.hpp",
+                                "loc_line": 28,
+                                "display": "[variable] ::some_name_space::Foo::c, type: char"
+                            }
+                        ]
+                    },
+                    "protected": {
+                        "display": "Protected",
+                        "variables": [
+                            {
+                                "key": "::some_name_space::Foo::d",
+                                "name": "d",
+                                "decl_type": {
+                                    "decl_string": "float",
+                                    "display": "float",
+                                    "byte_size": 4,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "loc_file_name": "examples/foo/foo.hpp",
+                                "loc_line": 30,
+                                "display": "[variable] ::some_name_space::Foo::d, type: float"
+                            }
+                        ]
+                    },
+                    "public": {
+                        "display": "Public",
+                        "constructors": [
+                            {
+                                "name": "Foo",
+                                "key": " ( ::some_name_space::Foo::* )(  )",
+                                "display": "[constructor]  ( ::some_name_space::Foo::* )(  )"
+                            },
+                            {
+                                "name": "Foo",
+                                "key": " ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )",
+                                "display": "[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )"
+                            },
+                            {
+                                "name": "Foo",
+                                "key": " ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )",
+                                "display": "[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )"
+                            }
+                        ],
+                        "variables": [
+                            {
+                                "key": "::some_name_space::Foo::a",
+                                "name": "a",
+                                "decl_type": {
+                                    "decl_string": "::uintmax_t",
+                                    "display": "::uintmax_t",
+                                    "byte_size": 8,
+                                    "loc_file_name": "/usr/include/stdint.h",
+                                    "loc_line": 102
+                                },
+                                "loc_file_name": "examples/foo/foo.hpp",
+                                "loc_line": 19,
+                                "display": "[variable] ::some_name_space::Foo::a, type: ::uintmax_t"
+                            },
+                            {
+                                "key": "::some_name_space::Foo::b",
+                                "name": "b",
+                                "decl_type": {
+                                    "decl_string": "::uintmax_t",
+                                    "display": "::uintmax_t",
+                                    "byte_size": 8,
+                                    "loc_file_name": "/usr/include/stdint.h",
+                                    "loc_line": 102
+                                },
+                                "loc_file_name": "examples/foo/foo.hpp",
+                                "loc_line": 19,
+                                "display": "[variable] ::some_name_space::Foo::b, type: ::uintmax_t"
+                            },
+                            {
+                                "key": "::some_name_space::Foo::tests",
+                                "name": "tests",
+                                "decl_type": {
+                                    "decl_string": "::unittests::test_suite",
+                                    "display": "::unittests::test_suite",
+                                    "byte_size": 32,
+                                    "loc_file_name": "examples/foo/unittests.hpp",
+                                    "loc_line": 30
+                                },
+                                "loc_file_name": "examples/foo/foo.hpp",
+                                "loc_line": 21,
+                                "display": "[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite"
+                            }
+                        ],
+                        "member_functions": [
+                            {
+                                "declaration": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                "name": "my_function",
+                                "key": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                "return_type": {
+                                    "decl_string": "::std::string",
+                                    "display": "::std::string",
+                                    "byte_size": 0,
+                                    "loc_file_name": "/usr/include/c++/9/bits/stringfwd.h",
+                                    "loc_line": 79
+                                },
+                                "does_throw": true,
+                                "virtuality": "not virtual",
+                                "has_static": true,
+                                "display": "[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                "arguments": [
+                                    {
+                                        "name": "v",
+                                        "decl_string": "int v",
+                                        "decl_type": {
+                                            "decl_string": "int",
+                                            "display": "int",
+                                            "byte_size": 4,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "display": "[argument] v, type: int"
+                                    },
+                                    {
+                                        "name": "x1",
+                                        "decl_string": "std::string const & x1",
+                                        "decl_type": {
+                                            "decl_string": "::std::string const &",
+                                            "display": "::std::string const &",
+                                            "byte_size": 8,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "display": "[argument] x1, type: ::std::string const &"
+                                    }
+                                ]
+                            }
+                        ],
+                        "member_operator": [
+                            {
+                                "name": "operator=",
+                                "decl_string": "::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )",
+                                "symbol": "=",
+                                "display": "[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ="
+                            }
+                        ],
+                        "destructors": [
+                            {
+                                "name": "~Foo",
+                                "key": " ( ::some_name_space::Foo::* )(  )",
+                                "display": "[destructor]  ( ::some_name_space::Foo::* )(  )"
+                            }
+                        ]
+                    },
+                    "display": "[struct] ::some_name_space::Foo"
+                }
+            ],
+            "typedefs": [
+                {
+                    "name": "FooAlias",
+                    "decl_string": "::some_name_space::FooAlias",
+                    "decl_type": {
+                        "decl_string": "::some_name_space::Foo",
+                        "display": "::some_name_space::Foo",
+                        "byte_size": 56,
+                        "loc_file_name": "examples/foo/foo.hpp",
+                        "loc_line": 11
+                    },
+                    "display": "[typedef] FooAlias, type: ::some_name_space::Foo"
+                }
+            ],
+            "free_functions": [
+                {
+                    "declaration": "int some_name_space::add_one(int a) ",
+                    "name": "add_one",
+                    "key": "int some_name_space::add_one(int a) ",
+                    "return_type": {
+                        "decl_string": "int",
+                        "display": "int",
+                        "byte_size": 4,
+                        "loc_file_name": null,
+                        "loc_line": null
+                    },
+                    "does_throw": true,
+                    "display": "[free function] int some_name_space::add_one(int a) ",
+                    "arguments": [
+                        {
+                            "name": "a",
+                            "decl_string": "int a",
+                            "decl_type": {
+                                "decl_string": "int",
+                                "display": "int",
+                                "byte_size": 4,
+                                "loc_file_name": null,
+                                "loc_line": null
+                            },
+                            "display": "[argument] a, type: int"
+                        }
+                    ]
+                }
+            ]
+        },
+        "::": {
+            "name": "::",
+            "key": "::",
+            "display": "[namespace] ::",
+            "nss": [
+                {
+                    "name": "unittests",
+                    "key": "::unittests",
+                    "display": "[namespace] unittests",
+                    "classes": [
+                        {
+                            "name": "test_results",
+                            "key": "::unittests::test_results",
+                            "private": {
+                                "display": "Private"
+                            },
+                            "protected": {
+                                "display": "Protected"
+                            },
+                            "public": {
+                                "display": "Public",
+                                "enumerations": [
+                                    {
+                                        "name": "status",
+                                        "decl_string": "::unittests::test_results::status",
+                                        "values": "[('ok', 0), ('fail', 1), ('error', 2)]",
+                                        "display": "[enumeration] ::unittests::test_results::status"
+                                    }
+                                ],
+                                "member_functions": [
+                                    {
+                                        "declaration": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                        "name": "update",
+                                        "key": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "not virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                                        "arguments": [
+                                            {
+                                                "name": "test_name",
+                                                "decl_string": "char const * test_name",
+                                                "decl_type": {
+                                                    "decl_string": "char const *",
+                                                    "display": "char const *",
+                                                    "byte_size": 8,
+                                                    "loc_file_name": null,
+                                                    "loc_line": null
+                                                },
+                                                "display": "[argument] test_name, type: char const *"
+                                            },
+                                            {
+                                                "name": "result",
+                                                "decl_string": "unittests::test_results::status result",
+                                                "decl_type": {
+                                                    "decl_string": "::unittests::test_results::status",
+                                                    "display": "::unittests::test_results::status",
+                                                    "byte_size": 4,
+                                                    "loc_file_name": "examples/foo/unittests.hpp",
+                                                    "loc_line": 9
+                                                },
+                                                "display": "[argument] result, type: ::unittests::test_results::status"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "member_operator": [
+                                    {
+                                        "name": "operator=",
+                                        "decl_string": "::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )",
+                                        "symbol": "=",
+                                        "display": "[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ="
+                                    }
+                                ],
+                                "destructors": [
+                                    {
+                                        "name": "~test_results",
+                                        "key": " ( ::unittests::test_results::* )(  )",
+                                        "display": "[destructor]  ( ::unittests::test_results::* )(  )"
+                                    }
+                                ],
+                                "constructors": [
+                                    {
+                                        "name": "test_results",
+                                        "key": " ( ::unittests::test_results::* )( ::unittests::test_results const & )",
+                                        "display": "[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )"
+                                    },
+                                    {
+                                        "name": "test_results",
+                                        "key": " ( ::unittests::test_results::* )(  )",
+                                        "display": "[constructor]  ( ::unittests::test_results::* )(  )"
+                                    }
+                                ]
+                            },
+                            "display": "[struct] ::unittests::test_results"
+                        },
+                        {
+                            "name": "test_case",
+                            "key": "::unittests::test_case",
+                            "private": {
+                                "display": "Private",
+                                "variables": [
+                                    {
+                                        "key": "::unittests::test_case::m_name",
+                                        "name": "m_name",
+                                        "decl_type": {
+                                            "decl_string": "char const *",
+                                            "display": "char const *",
+                                            "byte_size": 8,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "loc_file_name": "examples/foo/unittests.hpp",
+                                        "loc_line": 25,
+                                        "display": "[variable] ::unittests::test_case::m_name, type: char const *"
+                                    }
+                                ]
+                            },
+                            "protected": {
+                                "display": "Protected"
+                            },
+                            "public": {
+                                "display": "Public",
+                                "constructors": [
+                                    {
+                                        "name": "test_case",
+                                        "key": " ( ::unittests::test_case::* )( char const * )",
+                                        "display": "[constructor]  ( ::unittests::test_case::* )( char const * )"
+                                    },
+                                    {
+                                        "name": "test_case",
+                                        "key": " ( ::unittests::test_case::* )( ::unittests::test_case const & )",
+                                        "display": "[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )"
+                                    }
+                                ],
+                                "member_functions": [
+                                    {
+                                        "declaration": "void unittests::test_case::set_up()",
+                                        "name": "set_up",
+                                        "key": "void unittests::test_case::set_up()",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_case::set_up()"
+                                    },
+                                    {
+                                        "declaration": "void unittests::test_case::tear_down()",
+                                        "name": "tear_down",
+                                        "key": "void unittests::test_case::tear_down()",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_case::tear_down()"
+                                    },
+                                    {
+                                        "declaration": "void unittests::test_case::run()",
+                                        "name": "run",
+                                        "key": "void unittests::test_case::run()",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "pure virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_case::run()"
+                                    }
+                                ],
+                                "member_operator": [
+                                    {
+                                        "name": "operator=",
+                                        "decl_string": "::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )",
+                                        "symbol": "=",
+                                        "display": "[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ="
+                                    }
+                                ],
+                                "destructors": [
+                                    {
+                                        "name": "~test_case",
+                                        "key": " ( ::unittests::test_case::* )(  )",
+                                        "display": "[destructor]  ( ::unittests::test_case::* )(  )"
+                                    }
+                                ]
+                            },
+                            "display": "[struct] ::unittests::test_case"
+                        },
+                        {
+                            "name": "test_suite",
+                            "key": "::unittests::test_suite",
+                            "private": {
+                                "display": "Private",
+                                "variables": [
+                                    {
+                                        "key": "::unittests::test_suite::m_tests",
+                                        "name": "m_tests",
+                                        "decl_type": {
+                                            "decl_string": "::unittests::test_container *",
+                                            "display": "::unittests::test_container *",
+                                            "byte_size": 8,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "loc_file_name": "examples/foo/unittests.hpp",
+                                        "loc_line": 40,
+                                        "display": "[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *"
+                                    },
+                                    {
+                                        "key": "::unittests::test_suite::m_results",
+                                        "name": "m_results",
+                                        "decl_type": {
+                                            "decl_string": "::unittests::test_results",
+                                            "display": "::unittests::test_results",
+                                            "byte_size": 1,
+                                            "loc_file_name": "examples/foo/unittests.hpp",
+                                            "loc_line": 7
+                                        },
+                                        "loc_file_name": "examples/foo/unittests.hpp",
+                                        "loc_line": 41,
+                                        "display": "[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results"
+                                    }
+                                ]
+                            },
+                            "protected": {
+                                "display": "Protected"
+                            },
+                            "public": {
+                                "display": "Public",
+                                "constructors": [
+                                    {
+                                        "name": "test_suite",
+                                        "key": " ( ::unittests::test_suite::* )(  )",
+                                        "display": "[constructor]  ( ::unittests::test_suite::* )(  )"
+                                    },
+                                    {
+                                        "name": "test_suite",
+                                        "key": " ( ::unittests::test_suite::* )( ::unittests::test_suite const & )",
+                                        "display": "[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )"
+                                    }
+                                ],
+                                "member_functions": [
+                                    {
+                                        "declaration": "void unittests::test_suite::run()",
+                                        "name": "run",
+                                        "key": "void unittests::test_suite::run()",
+                                        "return_type": {
+                                            "decl_string": "void",
+                                            "display": "void",
+                                            "byte_size": 0,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "virtual",
+                                        "has_static": false,
+                                        "display": "[member function] void unittests::test_suite::run()"
+                                    },
+                                    {
+                                        "declaration": "unittests::test_results const & unittests::test_suite::get_results() const",
+                                        "name": "get_results",
+                                        "key": "unittests::test_results const & unittests::test_suite::get_results() const",
+                                        "return_type": {
+                                            "decl_string": "::unittests::test_results const &",
+                                            "display": "::unittests::test_results const &",
+                                            "byte_size": 8,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "not virtual",
+                                        "has_static": false,
+                                        "display": "[member function] unittests::test_results const & unittests::test_suite::get_results() const"
+                                    }
+                                ],
+                                "member_operator": [
+                                    {
+                                        "name": "operator=",
+                                        "decl_string": "::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )",
+                                        "symbol": "=",
+                                        "display": "[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ="
+                                    }
+                                ],
+                                "destructors": [
+                                    {
+                                        "name": "~test_suite",
+                                        "key": " ( ::unittests::test_suite::* )(  )",
+                                        "display": "[destructor]  ( ::unittests::test_suite::* )(  )"
+                                    }
+                                ]
+                            },
+                            "display": "[struct] ::unittests::test_suite"
+                        }
+                    ],
+                    "class_declarations": [
+                        {
+                            "name": "test_container",
+                            "key": "::unittests::test_container",
+                            "display": "[class declaration] ::unittests::test_container"
+                        }
+                    ]
+                },
+                {
+                    "name": "some_name_space",
+                    "key": "::some_name_space",
+                    "display": "[namespace] some_name_space",
+                    "classes": [
+                        {
+                            "name": "Foo",
+                            "key": "::some_name_space::Foo",
+                            "private": {
+                                "display": "Private",
+                                "variables": [
+                                    {
+                                        "key": "::some_name_space::Foo::c",
+                                        "name": "c",
+                                        "decl_type": {
+                                            "decl_string": "char",
+                                            "display": "char",
+                                            "byte_size": 1,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 28,
+                                        "display": "[variable] ::some_name_space::Foo::c, type: char"
+                                    }
+                                ]
+                            },
+                            "protected": {
+                                "display": "Protected",
+                                "variables": [
+                                    {
+                                        "key": "::some_name_space::Foo::d",
+                                        "name": "d",
+                                        "decl_type": {
+                                            "decl_string": "float",
+                                            "display": "float",
+                                            "byte_size": 4,
+                                            "loc_file_name": null,
+                                            "loc_line": null
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 30,
+                                        "display": "[variable] ::some_name_space::Foo::d, type: float"
+                                    }
+                                ]
+                            },
+                            "public": {
+                                "display": "Public",
+                                "constructors": [
+                                    {
+                                        "name": "Foo",
+                                        "key": " ( ::some_name_space::Foo::* )(  )",
+                                        "display": "[constructor]  ( ::some_name_space::Foo::* )(  )"
+                                    },
+                                    {
+                                        "name": "Foo",
+                                        "key": " ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )",
+                                        "display": "[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )"
+                                    },
+                                    {
+                                        "name": "Foo",
+                                        "key": " ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )",
+                                        "display": "[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )"
+                                    }
+                                ],
+                                "variables": [
+                                    {
+                                        "key": "::some_name_space::Foo::a",
+                                        "name": "a",
+                                        "decl_type": {
+                                            "decl_string": "::uintmax_t",
+                                            "display": "::uintmax_t",
+                                            "byte_size": 8,
+                                            "loc_file_name": "/usr/include/stdint.h",
+                                            "loc_line": 102
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 19,
+                                        "display": "[variable] ::some_name_space::Foo::a, type: ::uintmax_t"
+                                    },
+                                    {
+                                        "key": "::some_name_space::Foo::b",
+                                        "name": "b",
+                                        "decl_type": {
+                                            "decl_string": "::uintmax_t",
+                                            "display": "::uintmax_t",
+                                            "byte_size": 8,
+                                            "loc_file_name": "/usr/include/stdint.h",
+                                            "loc_line": 102
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 19,
+                                        "display": "[variable] ::some_name_space::Foo::b, type: ::uintmax_t"
+                                    },
+                                    {
+                                        "key": "::some_name_space::Foo::tests",
+                                        "name": "tests",
+                                        "decl_type": {
+                                            "decl_string": "::unittests::test_suite",
+                                            "display": "::unittests::test_suite",
+                                            "byte_size": 32,
+                                            "loc_file_name": "examples/foo/unittests.hpp",
+                                            "loc_line": 30
+                                        },
+                                        "loc_file_name": "examples/foo/foo.hpp",
+                                        "loc_line": 21,
+                                        "display": "[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite"
+                                    }
+                                ],
+                                "member_functions": [
+                                    {
+                                        "declaration": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                        "name": "my_function",
+                                        "key": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                        "return_type": {
+                                            "decl_string": "::std::string",
+                                            "display": "::std::string",
+                                            "byte_size": 0,
+                                            "loc_file_name": "/usr/include/c++/9/bits/stringfwd.h",
+                                            "loc_line": 79
+                                        },
+                                        "does_throw": true,
+                                        "virtuality": "not virtual",
+                                        "has_static": true,
+                                        "display": "[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                                        "arguments": [
+                                            {
+                                                "name": "v",
+                                                "decl_string": "int v",
+                                                "decl_type": {
+                                                    "decl_string": "int",
+                                                    "display": "int",
+                                                    "byte_size": 4,
+                                                    "loc_file_name": null,
+                                                    "loc_line": null
+                                                },
+                                                "display": "[argument] v, type: int"
+                                            },
+                                            {
+                                                "name": "x1",
+                                                "decl_string": "std::string const & x1",
+                                                "decl_type": {
+                                                    "decl_string": "::std::string const &",
+                                                    "display": "::std::string const &",
+                                                    "byte_size": 8,
+                                                    "loc_file_name": null,
+                                                    "loc_line": null
+                                                },
+                                                "display": "[argument] x1, type: ::std::string const &"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "member_operator": [
+                                    {
+                                        "name": "operator=",
+                                        "decl_string": "::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )",
+                                        "symbol": "=",
+                                        "display": "[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ="
+                                    }
+                                ],
+                                "destructors": [
+                                    {
+                                        "name": "~Foo",
+                                        "key": " ( ::some_name_space::Foo::* )(  )",
+                                        "display": "[destructor]  ( ::some_name_space::Foo::* )(  )"
+                                    }
+                                ]
+                            },
+                            "display": "[struct] ::some_name_space::Foo"
+                        }
+                    ],
+                    "typedefs": [
+                        {
+                            "name": "FooAlias",
+                            "decl_string": "::some_name_space::FooAlias",
+                            "decl_type": {
+                                "decl_string": "::some_name_space::Foo",
+                                "display": "::some_name_space::Foo",
+                                "byte_size": 56,
+                                "loc_file_name": "examples/foo/foo.hpp",
+                                "loc_line": 11
+                            },
+                            "display": "[typedef] FooAlias, type: ::some_name_space::Foo"
+                        }
+                    ],
+                    "free_functions": [
+                        {
+                            "declaration": "int some_name_space::add_one(int a) ",
+                            "name": "add_one",
+                            "key": "int some_name_space::add_one(int a) ",
+                            "return_type": {
+                                "decl_string": "int",
+                                "display": "int",
+                                "byte_size": 4,
+                                "loc_file_name": null,
+                                "loc_line": null
+                            },
+                            "does_throw": true,
+                            "display": "[free function] int some_name_space::add_one(int a) ",
+                            "arguments": [
+                                {
+                                    "name": "a",
+                                    "decl_string": "int a",
+                                    "decl_type": {
+                                        "decl_string": "int",
+                                        "display": "int",
+                                        "byte_size": 4,
+                                        "loc_file_name": null,
+                                        "loc_line": null
+                                    },
+                                    "display": "[argument] a, type: int"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "free_functions": [
+                {
+                    "declaration": "int main() ",
+                    "name": "main",
+                    "key": "int main() ",
+                    "return_type": {
+                        "decl_string": "int",
+                        "display": "int",
+                        "byte_size": 4,
+                        "loc_file_name": null,
+                        "loc_line": null
+                    },
+                    "does_throw": true,
+                    "display": "[free function] int main() "
+                }
+            ]
+        }
+    },
+    "classes": {
+        "::unittests::test_results": {
+            "name": "test_results",
+            "key": "::unittests::test_results",
+            "private": {
+                "display": "Private"
+            },
+            "protected": {
+                "display": "Protected"
+            },
+            "public": {
+                "display": "Public",
+                "enumerations": [
+                    {
+                        "name": "status",
+                        "decl_string": "::unittests::test_results::status",
+                        "values": "[('ok', 0), ('fail', 1), ('error', 2)]",
+                        "display": "[enumeration] ::unittests::test_results::status"
+                    }
+                ],
+                "member_functions": [
+                    {
+                        "declaration": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                        "name": "update",
+                        "key": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                        "return_type": {
+                            "decl_string": "void",
+                            "display": "void",
+                            "byte_size": 0,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "does_throw": true,
+                        "virtuality": "not virtual",
+                        "has_static": false,
+                        "display": "[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+                        "arguments": [
+                            {
+                                "name": "test_name",
+                                "decl_string": "char const * test_name",
+                                "decl_type": {
+                                    "decl_string": "char const *",
+                                    "display": "char const *",
+                                    "byte_size": 8,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "display": "[argument] test_name, type: char const *"
+                            },
+                            {
+                                "name": "result",
+                                "decl_string": "unittests::test_results::status result",
+                                "decl_type": {
+                                    "decl_string": "::unittests::test_results::status",
+                                    "display": "::unittests::test_results::status",
+                                    "byte_size": 4,
+                                    "loc_file_name": "examples/foo/unittests.hpp",
+                                    "loc_line": 9
+                                },
+                                "display": "[argument] result, type: ::unittests::test_results::status"
+                            }
+                        ]
+                    }
+                ],
+                "member_operator": [
+                    {
+                        "name": "operator=",
+                        "decl_string": "::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & )",
+                        "symbol": "=",
+                        "display": "[member operator] ::unittests::test_results & ( ::unittests::test_results::* )( ::unittests::test_results const & ), symbol: ="
+                    }
+                ],
+                "destructors": [
+                    {
+                        "name": "~test_results",
+                        "key": " ( ::unittests::test_results::* )(  )",
+                        "display": "[destructor]  ( ::unittests::test_results::* )(  )"
+                    }
+                ],
+                "constructors": [
+                    {
+                        "name": "test_results",
+                        "key": " ( ::unittests::test_results::* )( ::unittests::test_results const & )",
+                        "display": "[constructor]  ( ::unittests::test_results::* )( ::unittests::test_results const & )"
+                    },
+                    {
+                        "name": "test_results",
+                        "key": " ( ::unittests::test_results::* )(  )",
+                        "display": "[constructor]  ( ::unittests::test_results::* )(  )"
+                    }
+                ]
+            },
+            "display": "[struct] ::unittests::test_results"
+        },
+        "::unittests::test_case": {
+            "name": "test_case",
+            "key": "::unittests::test_case",
+            "private": {
+                "display": "Private",
+                "variables": [
+                    {
+                        "key": "::unittests::test_case::m_name",
+                        "name": "m_name",
+                        "decl_type": {
+                            "decl_string": "char const *",
+                            "display": "char const *",
+                            "byte_size": 8,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "loc_file_name": "examples/foo/unittests.hpp",
+                        "loc_line": 25,
+                        "display": "[variable] ::unittests::test_case::m_name, type: char const *"
+                    }
+                ]
+            },
+            "protected": {
+                "display": "Protected"
+            },
+            "public": {
+                "display": "Public",
+                "constructors": [
+                    {
+                        "name": "test_case",
+                        "key": " ( ::unittests::test_case::* )( char const * )",
+                        "display": "[constructor]  ( ::unittests::test_case::* )( char const * )"
+                    },
+                    {
+                        "name": "test_case",
+                        "key": " ( ::unittests::test_case::* )( ::unittests::test_case const & )",
+                        "display": "[constructor]  ( ::unittests::test_case::* )( ::unittests::test_case const & )"
+                    }
+                ],
+                "member_functions": [
+                    {
+                        "declaration": "void unittests::test_case::set_up()",
+                        "name": "set_up",
+                        "key": "void unittests::test_case::set_up()",
+                        "return_type": {
+                            "decl_string": "void",
+                            "display": "void",
+                            "byte_size": 0,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "does_throw": true,
+                        "virtuality": "virtual",
+                        "has_static": false,
+                        "display": "[member function] void unittests::test_case::set_up()"
+                    },
+                    {
+                        "declaration": "void unittests::test_case::tear_down()",
+                        "name": "tear_down",
+                        "key": "void unittests::test_case::tear_down()",
+                        "return_type": {
+                            "decl_string": "void",
+                            "display": "void",
+                            "byte_size": 0,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "does_throw": true,
+                        "virtuality": "virtual",
+                        "has_static": false,
+                        "display": "[member function] void unittests::test_case::tear_down()"
+                    },
+                    {
+                        "declaration": "void unittests::test_case::run()",
+                        "name": "run",
+                        "key": "void unittests::test_case::run()",
+                        "return_type": {
+                            "decl_string": "void",
+                            "display": "void",
+                            "byte_size": 0,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "does_throw": true,
+                        "virtuality": "pure virtual",
+                        "has_static": false,
+                        "display": "[member function] void unittests::test_case::run()"
+                    }
+                ],
+                "member_operator": [
+                    {
+                        "name": "operator=",
+                        "decl_string": "::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & )",
+                        "symbol": "=",
+                        "display": "[member operator] ::unittests::test_case & ( ::unittests::test_case::* )( ::unittests::test_case const & ), symbol: ="
+                    }
+                ],
+                "destructors": [
+                    {
+                        "name": "~test_case",
+                        "key": " ( ::unittests::test_case::* )(  )",
+                        "display": "[destructor]  ( ::unittests::test_case::* )(  )"
+                    }
+                ]
+            },
+            "display": "[struct] ::unittests::test_case"
+        },
+        "::unittests::test_suite": {
+            "name": "test_suite",
+            "key": "::unittests::test_suite",
+            "private": {
+                "display": "Private",
+                "variables": [
+                    {
+                        "key": "::unittests::test_suite::m_tests",
+                        "name": "m_tests",
+                        "decl_type": {
+                            "decl_string": "::unittests::test_container *",
+                            "display": "::unittests::test_container *",
+                            "byte_size": 8,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "loc_file_name": "examples/foo/unittests.hpp",
+                        "loc_line": 40,
+                        "display": "[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *"
+                    },
+                    {
+                        "key": "::unittests::test_suite::m_results",
+                        "name": "m_results",
+                        "decl_type": {
+                            "decl_string": "::unittests::test_results",
+                            "display": "::unittests::test_results",
+                            "byte_size": 1,
+                            "loc_file_name": "examples/foo/unittests.hpp",
+                            "loc_line": 7
+                        },
+                        "loc_file_name": "examples/foo/unittests.hpp",
+                        "loc_line": 41,
+                        "display": "[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results"
+                    }
+                ]
+            },
+            "protected": {
+                "display": "Protected"
+            },
+            "public": {
+                "display": "Public",
+                "constructors": [
+                    {
+                        "name": "test_suite",
+                        "key": " ( ::unittests::test_suite::* )(  )",
+                        "display": "[constructor]  ( ::unittests::test_suite::* )(  )"
+                    },
+                    {
+                        "name": "test_suite",
+                        "key": " ( ::unittests::test_suite::* )( ::unittests::test_suite const & )",
+                        "display": "[constructor]  ( ::unittests::test_suite::* )( ::unittests::test_suite const & )"
+                    }
+                ],
+                "member_functions": [
+                    {
+                        "declaration": "void unittests::test_suite::run()",
+                        "name": "run",
+                        "key": "void unittests::test_suite::run()",
+                        "return_type": {
+                            "decl_string": "void",
+                            "display": "void",
+                            "byte_size": 0,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "does_throw": true,
+                        "virtuality": "virtual",
+                        "has_static": false,
+                        "display": "[member function] void unittests::test_suite::run()"
+                    },
+                    {
+                        "declaration": "unittests::test_results const & unittests::test_suite::get_results() const",
+                        "name": "get_results",
+                        "key": "unittests::test_results const & unittests::test_suite::get_results() const",
+                        "return_type": {
+                            "decl_string": "::unittests::test_results const &",
+                            "display": "::unittests::test_results const &",
+                            "byte_size": 8,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "does_throw": true,
+                        "virtuality": "not virtual",
+                        "has_static": false,
+                        "display": "[member function] unittests::test_results const & unittests::test_suite::get_results() const"
+                    }
+                ],
+                "member_operator": [
+                    {
+                        "name": "operator=",
+                        "decl_string": "::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & )",
+                        "symbol": "=",
+                        "display": "[member operator] ::unittests::test_suite & ( ::unittests::test_suite::* )( ::unittests::test_suite const & ), symbol: ="
+                    }
+                ],
+                "destructors": [
+                    {
+                        "name": "~test_suite",
+                        "key": " ( ::unittests::test_suite::* )(  )",
+                        "display": "[destructor]  ( ::unittests::test_suite::* )(  )"
+                    }
+                ]
+            },
+            "display": "[struct] ::unittests::test_suite"
+        },
+        "::some_name_space::Foo": {
+            "name": "Foo",
+            "key": "::some_name_space::Foo",
+            "private": {
+                "display": "Private",
+                "variables": [
+                    {
+                        "key": "::some_name_space::Foo::c",
+                        "name": "c",
+                        "decl_type": {
+                            "decl_string": "char",
+                            "display": "char",
+                            "byte_size": 1,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "loc_file_name": "examples/foo/foo.hpp",
+                        "loc_line": 28,
+                        "display": "[variable] ::some_name_space::Foo::c, type: char"
+                    }
+                ]
+            },
+            "protected": {
+                "display": "Protected",
+                "variables": [
+                    {
+                        "key": "::some_name_space::Foo::d",
+                        "name": "d",
+                        "decl_type": {
+                            "decl_string": "float",
+                            "display": "float",
+                            "byte_size": 4,
+                            "loc_file_name": null,
+                            "loc_line": null
+                        },
+                        "loc_file_name": "examples/foo/foo.hpp",
+                        "loc_line": 30,
+                        "display": "[variable] ::some_name_space::Foo::d, type: float"
+                    }
+                ]
+            },
+            "public": {
+                "display": "Public",
+                "constructors": [
+                    {
+                        "name": "Foo",
+                        "key": " ( ::some_name_space::Foo::* )(  )",
+                        "display": "[constructor]  ( ::some_name_space::Foo::* )(  )"
+                    },
+                    {
+                        "name": "Foo",
+                        "key": " ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )",
+                        "display": "[constructor]  ( ::some_name_space::Foo::* )( ::uintmax_t,::uintmax_t,::unittests::test_suite,char,float )"
+                    },
+                    {
+                        "name": "Foo",
+                        "key": " ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )",
+                        "display": "[constructor]  ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )"
+                    }
+                ],
+                "variables": [
+                    {
+                        "key": "::some_name_space::Foo::a",
+                        "name": "a",
+                        "decl_type": {
+                            "decl_string": "::uintmax_t",
+                            "display": "::uintmax_t",
+                            "byte_size": 8,
+                            "loc_file_name": "/usr/include/stdint.h",
+                            "loc_line": 102
+                        },
+                        "loc_file_name": "examples/foo/foo.hpp",
+                        "loc_line": 19,
+                        "display": "[variable] ::some_name_space::Foo::a, type: ::uintmax_t"
+                    },
+                    {
+                        "key": "::some_name_space::Foo::b",
+                        "name": "b",
+                        "decl_type": {
+                            "decl_string": "::uintmax_t",
+                            "display": "::uintmax_t",
+                            "byte_size": 8,
+                            "loc_file_name": "/usr/include/stdint.h",
+                            "loc_line": 102
+                        },
+                        "loc_file_name": "examples/foo/foo.hpp",
+                        "loc_line": 19,
+                        "display": "[variable] ::some_name_space::Foo::b, type: ::uintmax_t"
+                    },
+                    {
+                        "key": "::some_name_space::Foo::tests",
+                        "name": "tests",
+                        "decl_type": {
+                            "decl_string": "::unittests::test_suite",
+                            "display": "::unittests::test_suite",
+                            "byte_size": 32,
+                            "loc_file_name": "examples/foo/unittests.hpp",
+                            "loc_line": 30
+                        },
+                        "loc_file_name": "examples/foo/foo.hpp",
+                        "loc_line": 21,
+                        "display": "[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite"
+                    }
+                ],
+                "member_functions": [
+                    {
+                        "declaration": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                        "name": "my_function",
+                        "key": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                        "return_type": {
+                            "decl_string": "::std::string",
+                            "display": "::std::string",
+                            "byte_size": 0,
+                            "loc_file_name": "/usr/include/c++/9/bits/stringfwd.h",
+                            "loc_line": 79
+                        },
+                        "does_throw": true,
+                        "virtuality": "not virtual",
+                        "has_static": true,
+                        "display": "[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+                        "arguments": [
+                            {
+                                "name": "v",
+                                "decl_string": "int v",
+                                "decl_type": {
+                                    "decl_string": "int",
+                                    "display": "int",
+                                    "byte_size": 4,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "display": "[argument] v, type: int"
+                            },
+                            {
+                                "name": "x1",
+                                "decl_string": "std::string const & x1",
+                                "decl_type": {
+                                    "decl_string": "::std::string const &",
+                                    "display": "::std::string const &",
+                                    "byte_size": 8,
+                                    "loc_file_name": null,
+                                    "loc_line": null
+                                },
+                                "display": "[argument] x1, type: ::std::string const &"
+                            }
+                        ]
+                    }
+                ],
+                "member_operator": [
+                    {
+                        "name": "operator=",
+                        "decl_string": "::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & )",
+                        "symbol": "=",
+                        "display": "[member operator] ::some_name_space::Foo & ( ::some_name_space::Foo::* )( ::some_name_space::Foo const & ), symbol: ="
+                    }
+                ],
+                "destructors": [
+                    {
+                        "name": "~Foo",
+                        "key": " ( ::some_name_space::Foo::* )(  )",
+                        "display": "[destructor]  ( ::some_name_space::Foo::* )(  )"
+                    }
+                ]
+            },
+            "display": "[struct] ::some_name_space::Foo"
+        }
+    },
+    "member_functions": {
+        "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)": {
+            "declaration": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+            "name": "update",
+            "key": "void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+            "return_type": {
+                "decl_string": "void",
+                "display": "void",
+                "byte_size": 0,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "does_throw": true,
+            "virtuality": "not virtual",
+            "has_static": false,
+            "display": "[member function] void unittests::test_results::update(char const * test_name, unittests::test_results::status result)",
+            "arguments": [
+                {
+                    "name": "test_name",
+                    "decl_string": "char const * test_name",
+                    "decl_type": {
+                        "decl_string": "char const *",
+                        "display": "char const *",
+                        "byte_size": 8,
+                        "loc_file_name": null,
+                        "loc_line": null
+                    },
+                    "display": "[argument] test_name, type: char const *"
+                },
+                {
+                    "name": "result",
+                    "decl_string": "unittests::test_results::status result",
+                    "decl_type": {
+                        "decl_string": "::unittests::test_results::status",
+                        "display": "::unittests::test_results::status",
+                        "byte_size": 4,
+                        "loc_file_name": "examples/foo/unittests.hpp",
+                        "loc_line": 9
+                    },
+                    "display": "[argument] result, type: ::unittests::test_results::status"
+                }
+            ]
+        },
+        "void unittests::test_case::set_up()": {
+            "declaration": "void unittests::test_case::set_up()",
+            "name": "set_up",
+            "key": "void unittests::test_case::set_up()",
+            "return_type": {
+                "decl_string": "void",
+                "display": "void",
+                "byte_size": 0,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "does_throw": true,
+            "virtuality": "virtual",
+            "has_static": false,
+            "display": "[member function] void unittests::test_case::set_up()"
+        },
+        "void unittests::test_case::tear_down()": {
+            "declaration": "void unittests::test_case::tear_down()",
+            "name": "tear_down",
+            "key": "void unittests::test_case::tear_down()",
+            "return_type": {
+                "decl_string": "void",
+                "display": "void",
+                "byte_size": 0,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "does_throw": true,
+            "virtuality": "virtual",
+            "has_static": false,
+            "display": "[member function] void unittests::test_case::tear_down()"
+        },
+        "void unittests::test_case::run()": {
+            "declaration": "void unittests::test_case::run()",
+            "name": "run",
+            "key": "void unittests::test_case::run()",
+            "return_type": {
+                "decl_string": "void",
+                "display": "void",
+                "byte_size": 0,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "does_throw": true,
+            "virtuality": "pure virtual",
+            "has_static": false,
+            "display": "[member function] void unittests::test_case::run()"
+        },
+        "void unittests::test_suite::run()": {
+            "declaration": "void unittests::test_suite::run()",
+            "name": "run",
+            "key": "void unittests::test_suite::run()",
+            "return_type": {
+                "decl_string": "void",
+                "display": "void",
+                "byte_size": 0,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "does_throw": true,
+            "virtuality": "virtual",
+            "has_static": false,
+            "display": "[member function] void unittests::test_suite::run()"
+        },
+        "unittests::test_results const & unittests::test_suite::get_results() const": {
+            "declaration": "unittests::test_results const & unittests::test_suite::get_results() const",
+            "name": "get_results",
+            "key": "unittests::test_results const & unittests::test_suite::get_results() const",
+            "return_type": {
+                "decl_string": "::unittests::test_results const &",
+                "display": "::unittests::test_results const &",
+                "byte_size": 8,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "does_throw": true,
+            "virtuality": "not virtual",
+            "has_static": false,
+            "display": "[member function] unittests::test_results const & unittests::test_suite::get_results() const"
+        },
+        "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)": {
+            "declaration": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+            "name": "my_function",
+            "key": "static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+            "return_type": {
+                "decl_string": "::std::string",
+                "display": "::std::string",
+                "byte_size": 0,
+                "loc_file_name": "/usr/include/c++/9/bits/stringfwd.h",
+                "loc_line": 79
+            },
+            "does_throw": true,
+            "virtuality": "not virtual",
+            "has_static": true,
+            "display": "[member function] static std::string some_name_space::Foo::my_function(int v, std::string const & x1)",
+            "arguments": [
+                {
+                    "name": "v",
+                    "decl_string": "int v",
+                    "decl_type": {
+                        "decl_string": "int",
+                        "display": "int",
+                        "byte_size": 4,
+                        "loc_file_name": null,
+                        "loc_line": null
+                    },
+                    "display": "[argument] v, type: int"
+                },
+                {
+                    "name": "x1",
+                    "decl_string": "std::string const & x1",
+                    "decl_type": {
+                        "decl_string": "::std::string const &",
+                        "display": "::std::string const &",
+                        "byte_size": 8,
+                        "loc_file_name": null,
+                        "loc_line": null
+                    },
+                    "display": "[argument] x1, type: ::std::string const &"
+                }
+            ]
+        }
+    },
+    "variables": {
+        "::unittests::test_case::m_name": {
+            "key": "::unittests::test_case::m_name",
+            "name": "m_name",
+            "decl_type": {
+                "decl_string": "char const *",
+                "display": "char const *",
+                "byte_size": 8,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "loc_file_name": "examples/foo/unittests.hpp",
+            "loc_line": 25,
+            "display": "[variable] ::unittests::test_case::m_name, type: char const *"
+        },
+        "::unittests::test_suite::m_tests": {
+            "key": "::unittests::test_suite::m_tests",
+            "name": "m_tests",
+            "decl_type": {
+                "decl_string": "::unittests::test_container *",
+                "display": "::unittests::test_container *",
+                "byte_size": 8,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "loc_file_name": "examples/foo/unittests.hpp",
+            "loc_line": 40,
+            "display": "[variable] ::unittests::test_suite::m_tests, type: ::unittests::test_container *"
+        },
+        "::unittests::test_suite::m_results": {
+            "key": "::unittests::test_suite::m_results",
+            "name": "m_results",
+            "decl_type": {
+                "decl_string": "::unittests::test_results",
+                "display": "::unittests::test_results",
+                "byte_size": 1,
+                "loc_file_name": "examples/foo/unittests.hpp",
+                "loc_line": 7
+            },
+            "loc_file_name": "examples/foo/unittests.hpp",
+            "loc_line": 41,
+            "display": "[variable] ::unittests::test_suite::m_results, type: ::unittests::test_results"
+        },
+        "::some_name_space::Foo::c": {
+            "key": "::some_name_space::Foo::c",
+            "name": "c",
+            "decl_type": {
+                "decl_string": "char",
+                "display": "char",
+                "byte_size": 1,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "loc_file_name": "examples/foo/foo.hpp",
+            "loc_line": 28,
+            "display": "[variable] ::some_name_space::Foo::c, type: char"
+        },
+        "::some_name_space::Foo::d": {
+            "key": "::some_name_space::Foo::d",
+            "name": "d",
+            "decl_type": {
+                "decl_string": "float",
+                "display": "float",
+                "byte_size": 4,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "loc_file_name": "examples/foo/foo.hpp",
+            "loc_line": 30,
+            "display": "[variable] ::some_name_space::Foo::d, type: float"
+        },
+        "::some_name_space::Foo::a": {
+            "key": "::some_name_space::Foo::a",
+            "name": "a",
+            "decl_type": {
+                "decl_string": "::uintmax_t",
+                "display": "::uintmax_t",
+                "byte_size": 8,
+                "loc_file_name": "/usr/include/stdint.h",
+                "loc_line": 102
+            },
+            "loc_file_name": "examples/foo/foo.hpp",
+            "loc_line": 19,
+            "display": "[variable] ::some_name_space::Foo::a, type: ::uintmax_t"
+        },
+        "::some_name_space::Foo::b": {
+            "key": "::some_name_space::Foo::b",
+            "name": "b",
+            "decl_type": {
+                "decl_string": "::uintmax_t",
+                "display": "::uintmax_t",
+                "byte_size": 8,
+                "loc_file_name": "/usr/include/stdint.h",
+                "loc_line": 102
+            },
+            "loc_file_name": "examples/foo/foo.hpp",
+            "loc_line": 19,
+            "display": "[variable] ::some_name_space::Foo::b, type: ::uintmax_t"
+        },
+        "::some_name_space::Foo::tests": {
+            "key": "::some_name_space::Foo::tests",
+            "name": "tests",
+            "decl_type": {
+                "decl_string": "::unittests::test_suite",
+                "display": "::unittests::test_suite",
+                "byte_size": 32,
+                "loc_file_name": "examples/foo/unittests.hpp",
+                "loc_line": 30
+            },
+            "loc_file_name": "examples/foo/foo.hpp",
+            "loc_line": 21,
+            "display": "[variable] ::some_name_space::Foo::tests, type: ::unittests::test_suite"
+        }
+    },
+    "free_functions": {
+        "int some_name_space::add_one(int a) ": {
+            "declaration": "int some_name_space::add_one(int a) ",
+            "name": "add_one",
+            "key": "int some_name_space::add_one(int a) ",
+            "return_type": {
+                "decl_string": "int",
+                "display": "int",
+                "byte_size": 4,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "does_throw": true,
+            "display": "[free function] int some_name_space::add_one(int a) ",
+            "arguments": [
+                {
+                    "name": "a",
+                    "decl_string": "int a",
+                    "decl_type": {
+                        "decl_string": "int",
+                        "display": "int",
+                        "byte_size": 4,
+                        "loc_file_name": null,
+                        "loc_line": null
+                    },
+                    "display": "[argument] a, type: int"
+                }
+            ]
+        },
+        "int main() ": {
+            "declaration": "int main() ",
+            "name": "main",
+            "key": "int main() ",
+            "return_type": {
+                "decl_string": "int",
+                "display": "int",
+                "byte_size": 4,
+                "loc_file_name": null,
+                "loc_line": null
+            },
+            "does_throw": true,
+            "display": "[free function] int main() "
+        }
+    }
+}
