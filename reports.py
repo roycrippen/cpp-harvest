@@ -52,12 +52,14 @@ class Reports:
 
         yaml_str = yaml.dump(self.tree, Dumper=NoAliasDumper, default_flow_style=False, indent=4, width=240)
 
-        # approximately 4 times smaller with references
-        # yaml_str = yaml.dump(self.tree, default_flow_style=False, indent=4, width=240)
-
         if report.show_screen:
             print('\nprint tree in yaml format...')
             print(yaml_str)
 
         if report.output_yaml is not None:
             self.write_yaml(yaml_str, report.output_yaml)
+
+            yaml_str = yaml.dump(self.tree, default_flow_style=False, indent=4, width=240)
+            out = report.output_yaml.replace('.yaml', '_refs.yaml')
+            self.write_yaml(yaml_str, out)
+
