@@ -1,124 +1,353 @@
 !!python/object:parser.Tree
 classes: {}
 free_functions:
-  'int ns::add_one(int a) ': &id001 !!python/object:parser.FreeFunction
-    arguments:
-    - !!python/object:parser.Argument
-      decl_string: int a
-      decl_type: !!python/object:parser.DeclaredType
-        byte_size: 4
-        decl_string: int
-        display: int
-        loc_file_name: null
-        loc_line: null
-      display: '[argument] a, type: int'
-      name: a
-    declaration: 'int ns::add_one(int a) '
-    display: '[free function] int ns::add_one(int a) '
-    does_throw: true
-    key: 'int ns::add_one(int a) '
-    name: add_one
-    return_type: !!python/object:parser.DeclaredType
-      byte_size: 4
-      decl_string: int
-      display: int
-      loc_file_name: null
-      loc_line: null
+    'int ns::add_one(int a) ': !!python/object:parser.FreeFunction
+        arguments:
+        - !!python/object:parser.Argument
+            decl_string: int a
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+            display: '[argument] a, type: int'
+            name: a
+        declaration: 'int ns::add_one(int a) '
+        display: '[free function] int ns::add_one(int a) '
+        does_throw: true
+        key: 'int ns::add_one(int a) '
+        name: add_one
+        return_type: !!python/object:parser.DeclaredType
+            byte_size: 4
+            decl_string: int
+            display: int
+            loc_file_name: null
+            loc_line: null
 member_functions: {}
 namespaces:
-  '::': &id003 !!python/object:parser.NameSpace
+    '::': !!python/object:parser.NameSpace
+        display: '[namespace] ::'
+        key: '::'
+        name: '::'
+        nss:
+        - !!python/object:parser.NameSpace
+            display: '[namespace] ns'
+            free_functions:
+            - !!python/object:parser.FreeFunction
+                arguments:
+                - !!python/object:parser.Argument
+                    decl_string: int a
+                    decl_type: !!python/object:parser.DeclaredType
+                        byte_size: 4
+                        decl_string: int
+                        display: int
+                        loc_file_name: null
+                        loc_line: null
+                    display: '[argument] a, type: int'
+                    name: a
+                declaration: 'int ns::add_one(int a) '
+                display: '[free function] int ns::add_one(int a) '
+                does_throw: true
+                key: 'int ns::add_one(int a) '
+                name: add_one
+                return_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: int
+                    display: int
+                    loc_file_name: null
+                    loc_line: null
+            key: ::ns
+            name: ns
+            variables:
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: int
+                    display: int
+                    loc_file_name: null
+                    loc_line: null
+                display: '[variable] ::ns::a, type: int'
+                key: ::ns::a
+                loc_file_name: examples/tiny/tiny.hpp
+                loc_line: 2
+                name: a
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: int
+                    display: int
+                    loc_file_name: null
+                    loc_line: null
+                display: '[variable] ::ns::b, type: int'
+                key: ::ns::b
+                loc_file_name: examples/tiny/tiny.hpp
+                loc_line: 3
+                name: b
+            - !!python/object:parser.Variable
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 8
+                    decl_string: double
+                    display: double
+                    loc_file_name: null
+                    loc_line: null
+                display: '[variable] ::ns::c, type: double'
+                key: ::ns::c
+                loc_file_name: examples/tiny/tiny.hpp
+                loc_line: 4
+                name: c
+        typedefs:
+        - !!python/object:parser.TypeDef
+            decl_string: ::__int128_t
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 0
+                decl_string: ?unknown?
+                display: ?unknown?
+                loc_file_name: null
+                loc_line: null
+            display: '[typedef] __int128_t, type: ?unknown?'
+            name: __int128_t
+        - !!python/object:parser.TypeDef
+            decl_string: ::__uint128_t
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 0
+                decl_string: ?unknown?
+                display: ?unknown?
+                loc_file_name: null
+                loc_line: null
+            display: '[typedef] __uint128_t, type: ?unknown?'
+            name: __uint128_t
+        - !!python/object:parser.TypeDef
+            decl_string: ::__builtin_ms_va_list
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 8
+                decl_string: char *
+                display: char *
+                loc_file_name: null
+                loc_line: null
+            display: '[typedef] __builtin_ms_va_list, type: char *'
+            name: __builtin_ms_va_list
+        - !!python/object:parser.TypeDef
+            decl_string: ::__builtin_va_list
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 0
+                decl_string: ?unknown? [1]
+                display: ?unknown? [1]
+                loc_file_name: null
+                loc_line: null
+            display: '[typedef] __builtin_va_list, type: ?unknown? [1]'
+            name: __builtin_va_list
+    ::ns: !!python/object:parser.NameSpace
+        display: '[namespace] ns'
+        free_functions:
+        - !!python/object:parser.FreeFunction
+            arguments:
+            - !!python/object:parser.Argument
+                decl_string: int a
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: int
+                    display: int
+                    loc_file_name: null
+                    loc_line: null
+                display: '[argument] a, type: int'
+                name: a
+            declaration: 'int ns::add_one(int a) '
+            display: '[free function] int ns::add_one(int a) '
+            does_throw: true
+            key: 'int ns::add_one(int a) '
+            name: add_one
+            return_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+        key: ::ns
+        name: ns
+        variables:
+        - !!python/object:parser.Variable
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+            display: '[variable] ::ns::a, type: int'
+            key: ::ns::a
+            loc_file_name: examples/tiny/tiny.hpp
+            loc_line: 2
+            name: a
+        - !!python/object:parser.Variable
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+            display: '[variable] ::ns::b, type: int'
+            key: ::ns::b
+            loc_file_name: examples/tiny/tiny.hpp
+            loc_line: 3
+            name: b
+        - !!python/object:parser.Variable
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 8
+                decl_string: double
+                display: double
+                loc_file_name: null
+                loc_line: null
+            display: '[variable] ::ns::c, type: double'
+            key: ::ns::c
+            loc_file_name: examples/tiny/tiny.hpp
+            loc_line: 4
+            name: c
+nss:
+- !!python/object:parser.NameSpace
     display: '[namespace] ::'
     key: '::'
     name: '::'
     nss:
-    - &id002 !!python/object:parser.NameSpace
-      display: '[namespace] ns'
-      free_functions:
-      - *id001
-      key: ::ns
-      name: ns
-      variables:
-      - &id004 !!python/object:parser.Variable
+    - !!python/object:parser.NameSpace
+        display: '[namespace] ns'
+        free_functions:
+        - !!python/object:parser.FreeFunction
+            arguments:
+            - !!python/object:parser.Argument
+                decl_string: int a
+                decl_type: !!python/object:parser.DeclaredType
+                    byte_size: 4
+                    decl_string: int
+                    display: int
+                    loc_file_name: null
+                    loc_line: null
+                display: '[argument] a, type: int'
+                name: a
+            declaration: 'int ns::add_one(int a) '
+            display: '[free function] int ns::add_one(int a) '
+            does_throw: true
+            key: 'int ns::add_one(int a) '
+            name: add_one
+            return_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+        key: ::ns
+        name: ns
+        variables:
+        - !!python/object:parser.Variable
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+            display: '[variable] ::ns::a, type: int'
+            key: ::ns::a
+            loc_file_name: examples/tiny/tiny.hpp
+            loc_line: 2
+            name: a
+        - !!python/object:parser.Variable
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 4
+                decl_string: int
+                display: int
+                loc_file_name: null
+                loc_line: null
+            display: '[variable] ::ns::b, type: int'
+            key: ::ns::b
+            loc_file_name: examples/tiny/tiny.hpp
+            loc_line: 3
+            name: b
+        - !!python/object:parser.Variable
+            decl_type: !!python/object:parser.DeclaredType
+                byte_size: 8
+                decl_string: double
+                display: double
+                loc_file_name: null
+                loc_line: null
+            display: '[variable] ::ns::c, type: double'
+            key: ::ns::c
+            loc_file_name: examples/tiny/tiny.hpp
+            loc_line: 4
+            name: c
+    typedefs:
+    - !!python/object:parser.TypeDef
+        decl_string: ::__int128_t
         decl_type: !!python/object:parser.DeclaredType
-          byte_size: 4
-          decl_string: int
-          display: int
-          loc_file_name: null
-          loc_line: null
+            byte_size: 0
+            decl_string: ?unknown?
+            display: ?unknown?
+            loc_file_name: null
+            loc_line: null
+        display: '[typedef] __int128_t, type: ?unknown?'
+        name: __int128_t
+    - !!python/object:parser.TypeDef
+        decl_string: ::__uint128_t
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 0
+            decl_string: ?unknown?
+            display: ?unknown?
+            loc_file_name: null
+            loc_line: null
+        display: '[typedef] __uint128_t, type: ?unknown?'
+        name: __uint128_t
+    - !!python/object:parser.TypeDef
+        decl_string: ::__builtin_ms_va_list
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 8
+            decl_string: char *
+            display: char *
+            loc_file_name: null
+            loc_line: null
+        display: '[typedef] __builtin_ms_va_list, type: char *'
+        name: __builtin_ms_va_list
+    - !!python/object:parser.TypeDef
+        decl_string: ::__builtin_va_list
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 0
+            decl_string: ?unknown? [1]
+            display: ?unknown? [1]
+            loc_file_name: null
+            loc_line: null
+        display: '[typedef] __builtin_va_list, type: ?unknown? [1]'
+        name: __builtin_va_list
+variables:
+    ::ns::a: !!python/object:parser.Variable
+        decl_type: !!python/object:parser.DeclaredType
+            byte_size: 4
+            decl_string: int
+            display: int
+            loc_file_name: null
+            loc_line: null
         display: '[variable] ::ns::a, type: int'
         key: ::ns::a
         loc_file_name: examples/tiny/tiny.hpp
         loc_line: 2
         name: a
-      - &id005 !!python/object:parser.Variable
+    ::ns::b: !!python/object:parser.Variable
         decl_type: !!python/object:parser.DeclaredType
-          byte_size: 4
-          decl_string: int
-          display: int
-          loc_file_name: null
-          loc_line: null
+            byte_size: 4
+            decl_string: int
+            display: int
+            loc_file_name: null
+            loc_line: null
         display: '[variable] ::ns::b, type: int'
         key: ::ns::b
         loc_file_name: examples/tiny/tiny.hpp
         loc_line: 3
         name: b
-      - &id006 !!python/object:parser.Variable
+    ::ns::c: !!python/object:parser.Variable
         decl_type: !!python/object:parser.DeclaredType
-          byte_size: 8
-          decl_string: double
-          display: double
-          loc_file_name: null
-          loc_line: null
+            byte_size: 8
+            decl_string: double
+            display: double
+            loc_file_name: null
+            loc_line: null
         display: '[variable] ::ns::c, type: double'
         key: ::ns::c
         loc_file_name: examples/tiny/tiny.hpp
         loc_line: 4
         name: c
-    typedefs:
-    - !!python/object:parser.TypeDef
-      decl_string: ::__int128_t
-      decl_type: !!python/object:parser.DeclaredType
-        byte_size: 0
-        decl_string: ?unknown?
-        display: ?unknown?
-        loc_file_name: null
-        loc_line: null
-      display: '[typedef] __int128_t, type: ?unknown?'
-      name: __int128_t
-    - !!python/object:parser.TypeDef
-      decl_string: ::__uint128_t
-      decl_type: !!python/object:parser.DeclaredType
-        byte_size: 0
-        decl_string: ?unknown?
-        display: ?unknown?
-        loc_file_name: null
-        loc_line: null
-      display: '[typedef] __uint128_t, type: ?unknown?'
-      name: __uint128_t
-    - !!python/object:parser.TypeDef
-      decl_string: ::__builtin_ms_va_list
-      decl_type: !!python/object:parser.DeclaredType
-        byte_size: 8
-        decl_string: char *
-        display: char *
-        loc_file_name: null
-        loc_line: null
-      display: '[typedef] __builtin_ms_va_list, type: char *'
-      name: __builtin_ms_va_list
-    - !!python/object:parser.TypeDef
-      decl_string: ::__builtin_va_list
-      decl_type: !!python/object:parser.DeclaredType
-        byte_size: 0
-        decl_string: ?unknown? [1]
-        display: ?unknown? [1]
-        loc_file_name: null
-        loc_line: null
-      display: '[typedef] __builtin_va_list, type: ?unknown? [1]'
-      name: __builtin_va_list
-  ::ns: *id002
-nss:
-- *id003
-variables:
-  ::ns::a: *id004
-  ::ns::b: *id005
-  ::ns::c: *id006
